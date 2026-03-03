@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import { Section, PageTitle, PageIntro } from "@/components/section";
 import { ServiceCard } from "@/components/service-card";
-import { Testimonial } from "@/components/testimonial";
-import { coachTestimonials } from "@/data/testimonials";
-
 export const metadata: Metadata = {
   title: "Work With Me",
   description:
@@ -104,22 +101,6 @@ export default function WorkWithMe() {
                 {avatar.description}
               </p>
             </div>
-          ))}
-        </div>
-      </Section>
-
-      <Section>
-        <h2 className="text-[22px] md:text-[28px] font-semibold text-text mb-2">
-          Proof it works
-        </h2>
-        <p className="text-[16px] md:text-[18px] text-text-secondary mb-8">
-          Scottish FA approached Kevin about integrating FootballGPT into their
-          coach education platform. 10,000+ coaches across 40+ countries.
-          Eight live AI products across football and beyond.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {coachTestimonials.map((t) => (
-            <Testimonial key={t.name + t.role} {...t} />
           ))}
         </div>
       </Section>
