@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Section, PageTitle, PageIntro } from "@/components/section";
 import { Testimonial } from "@/components/testimonial";
 import { CTACard } from "@/components/cta-card";
@@ -83,6 +84,16 @@ export default function About() {
                 anything like it.
               </p>
             </div>
+          </div>
+
+          <div className="rounded-xl overflow-hidden">
+            <Image
+              src="/images/kevin-coaching.png"
+              alt="Kevin Middleton coaching on the pitch"
+              width={720}
+              height={720}
+              className="w-full h-auto"
+            />
           </div>
 
           <div>

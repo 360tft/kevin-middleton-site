@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Section, PageTitle, PageIntro } from "@/components/section";
 import { StatsRow } from "@/components/stats-row";
 import { ProductCard } from "@/components/product-card";
@@ -13,16 +14,30 @@ export default function Home() {
   return (
     <>
       <Section className="pt-24 md:pt-32">
-        <PageTitle>
-          Kevin Middleton is a UEFA Licensed Coach, Author, Football Community
-          Builder and Builder of AI Tools used by thousands of football coaches
-          and players worldwide.
-        </PageTitle>
-        <PageIntro>
-          Having coached everybody from grassroots to professional, ages 1 to
-          70, Kevin now builds AI solutions for individuals, clubs, federations,
-          and entrepreneurs.
-        </PageIntro>
+        <div className="flex flex-col md:flex-row md:items-center gap-8 md:gap-12">
+          <div className="shrink-0 flex justify-center md:justify-start">
+            <Image
+              src="/images/kevin-profile.png"
+              alt="Kevin Middleton"
+              width={200}
+              height={200}
+              priority
+              className="w-[160px] h-[160px] md:w-[200px] md:h-[200px]"
+            />
+          </div>
+          <div>
+            <PageTitle>
+              Kevin Middleton is a UEFA Licensed Coach, Author, Football
+              Community Builder and Builder of AI Tools used by thousands of
+              football coaches and players worldwide.
+            </PageTitle>
+            <PageIntro>
+              Having coached everybody from grassroots to professional, ages 1
+              to 70, Kevin now builds AI solutions for individuals, clubs,
+              federations, and entrepreneurs.
+            </PageIntro>
+          </div>
+        </div>
       </Section>
 
       <Section className="py-0">
