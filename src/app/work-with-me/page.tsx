@@ -4,7 +4,7 @@ import { ServiceCard } from "@/components/service-card";
 export const metadata: Metadata = {
   title: "Work With Me",
   description:
-    "Kevin helps clubs, federations, and entrepreneurs bring AI into football coaching. Strategy calls, bootcamps, and custom builds.",
+    "You have an idea for an AI tool. Kevin has built eight. One strategy call and you will have a clear plan to build yours.",
 };
 
 const services = [
@@ -12,28 +12,28 @@ const services = [
     title: "Strategy Call",
     price: "\u00A3297",
     description:
-      "90-minute call. We assess your situation, identify opportunities, and create an action plan. Whether you want to build an AI tool, integrate AI into your coaching business, or explore what's possible. This is where it starts.",
+      "Walk away with a clear plan for your AI tool in 90 minutes. Kevin will assess your idea, show you what's realistic, and map out exactly how to build it. No fluff. Just a plan you can act on.",
     colour: "#E5A11C",
   },
   {
     title: "Builder Bootcamp",
     price: "$497",
     description:
-      "Get the FootballGPT codebase, API access to all products, a 30-day build curriculum, and weekly calls. You build your own AI tool with Kevin's code and guidance.",
+      "Leave with your own working AI tool in 30 days. You get Kevin's actual FootballGPT codebase, API access to every product, and weekly calls to keep you on track.",
     colour: "#10b981",
   },
   {
     title: "Custom AI Build",
     price: "\u00A35K\u201315K+",
     description:
-      "Kevin builds your AI tool. Flat fee, revenue share, or white-label license. The commercial model is determined on the strategy call based on your situation.",
+      "Kevin builds it for you. You get a finished AI product, deployed and ready for users. Flat fee, revenue share, or white-label. The right model is decided on your strategy call.",
     colour: "#f97316",
   },
   {
     title: "Advisory",
     price: "Ongoing",
     description:
-      "Strategic support beyond the initial build. Priority access, product direction, and ongoing technical guidance for organisations investing in AI.",
+      "Priority access to Kevin after launch. Product direction, technical guidance, and strategic support so your AI tool keeps growing.",
     colour: "#8b5cf6",
   },
 ];
@@ -41,23 +41,23 @@ const services = [
 const avatars = [
   {
     title: "Coaches with an idea",
-    description: "You have a concept for an AI tool but can't build it yourself.",
+    description: "You know what you want to build but you don't have the technical skills. Kevin does.",
   },
   {
     title: "Coach educators",
-    description: "You want to enhance your offering with AI-powered tools.",
+    description: "Your coaches ask the same questions over and over. An AI tool answers them 24/7.",
   },
   {
     title: "Clubs and academies",
-    description: "You want AI integrated into your coaching operations.",
+    description: "Your coaches spend hours on admin that AI could handle in minutes.",
   },
   {
     title: "Federations",
-    description: "You want an AI assistant for coach education programmes.",
+    description: "You need to scale coach education without scaling headcount.",
   },
   {
     title: "Football business owners",
-    description: "You have an audience and want an AI product to serve them.",
+    description: "You have the audience. You need the product. Kevin has built eight.",
   },
 ];
 
@@ -67,9 +67,9 @@ export default function WorkWithMe() {
       <Section className="pt-24 md:pt-32">
         <PageTitle>Work with Kevin</PageTitle>
         <PageIntro>
-          Kevin helps clubs, federations, and entrepreneurs bring AI into
-          football coaching. From a single strategy call to a fully built
-          product.
+          You have the idea. Kevin has the code, the experience, and eight
+          live products to prove it works. One call is all it takes to get
+          started.
         </PageIntro>
       </Section>
 
@@ -108,11 +108,11 @@ export default function WorkWithMe() {
       <Section>
         <div className="bg-[#1a1a1a] rounded-xl p-8 md:p-12 text-center">
           <h2 className="text-[22px] md:text-[28px] font-semibold text-white mb-3">
-            Start the conversation
+            One call. A clear plan.
           </h2>
           <p className="text-[16px] md:text-[18px] text-white/70 max-w-[560px] mx-auto mb-6">
-            Book a strategy call. Kevin will assess your situation and present
-            the right option for you.
+            90 minutes with someone who has built eight AI products from scratch.
+            You will leave with a plan, not a pitch.
           </p>
           <a
             href="https://cal.com"

@@ -7,17 +7,17 @@ import { products } from "@/data/products";
 export const metadata: Metadata = {
   title: "Products",
   description:
-    "AI tools for football coaches, referees, clubs, and cruisers. Eight live products serving coaches across 24 countries.",
+    "Eight AI tools that give coaches, referees, and clubs the answers they need in seconds. Used across 40+ countries.",
 };
 
 export default function Products() {
   return (
     <>
       <Section className="pt-24 md:pt-32">
-        <PageTitle>Products</PageTitle>
+        <PageTitle>Eight products. Thousands of daily users.</PageTitle>
         <PageIntro>
-          AI tools for football coaches, referees, clubs, and cruisers. Eight
-          live products serving users across 24 countries.
+          Every tool here started with the same question: what takes coaches
+          hours that AI could do in seconds? These are the answers.
         </PageIntro>
       </Section>
 
@@ -32,7 +32,7 @@ export default function Products() {
       <Section>
         <CTACard
           title="Want Kevin to build yours?"
-          description="Custom AI tools for clubs, federations, and football businesses."
+          description="Kevin has built eight. Yours could be next. From a 90-minute strategy call to a fully deployed product."
           href="/work-with-me"
           label="Start the conversation"
         />

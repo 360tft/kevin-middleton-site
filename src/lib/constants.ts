@@ -2,7 +2,7 @@ export const SITE = {
   name: "Kevin Middleton",
   title: "Kevin Middleton | Football AI Expert",
   description:
-    "UEFA Licensed Coach, Author, Football Community Builder and Builder of AI Tools used by thousands of football coaches and players worldwide.",
+    "Builder of eight AI tools used by 10,000+ football coaches across 40+ countries. Kevin helps clubs, federations, and entrepreneurs bring AI into football.",
   url: "https://kevinmiddleton.360tft.com",
 } as const;
 

@@ -9,49 +9,49 @@ export const products: Product[] = [
   {
     name: "FootballGPT",
     description:
-      "AI coaching assistant with 5 modes, 18 specialist advisors, animated drill diagrams, and real stats from 100+ leagues.",
+      "Get session plans, tactical advice, and real stats from 100+ leagues. Answers in seconds, not hours.",
     url: "https://footballgpt.co",
     colour: "#16a34a",
   },
   {
     name: "RefereeGPT",
     description:
-      "Duolingo-style referee education. Learn the laws of the game through scenarios and quizzes.",
+      "Pass your referee exams faster. Learn the laws through real match scenarios, not textbooks.",
     url: "https://refereegpt.co",
     colour: "#eab308",
   },
   {
     name: "CoachReflect",
     description:
-      "AI-guided coaching journal. Reflect on sessions, track growth, and build your coaching identity.",
+      "Become a better coach after every session. AI-guided reflection that turns experience into growth.",
     url: "https://coachreflection.com",
     colour: "#10b981",
   },
   {
     name: "CruiseGPT",
     description:
-      "AI cruise guide with port information, excursion tips, and personalised itinerary planning.",
+      "Plan the perfect cruise without the research. Port guides, excursion tips, and personalised itineraries on demand.",
     url: "https://360cruising.com",
     colour: "#06b6d4",
   },
   {
     name: "AI Football Marketplace",
     description:
-      "MCP gateway and API marketplace for football AI tools. Build your own integrations.",
+      "Connect football AI tools to your own apps. One API, every product.",
     url: "https://aifootball.co",
     colour: "#8b5cf6",
   },
   {
     name: "Football Coaching Academy",
     description:
-      "1,500+ coach community. Sessions, game models, masterclasses, and direct access to Kevin.",
+      "10,000+ coaches developing better players together. Sessions, game models, and direct access to Kevin.",
     url: "https://www.skool.com/coachingacademy",
     colour: "#f97316",
   },
   {
     name: "PlayerReflection",
     description:
-      "AI-guided reflection for players. Track development, set goals, and build confidence.",
+      "Help players see their own progress. AI-guided reflection that builds confidence and self-awareness.",
     url: "https://playreflect.com",
     colour: "#ec4899",
   },

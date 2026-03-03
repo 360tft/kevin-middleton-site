@@ -8,7 +8,7 @@ import { playerTestimonials } from "@/data/testimonials";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "From grassroots coaching in Scotland to building AI tools used by thousands. Kevin Middleton's story.",
+    "From a muddy pitch in Scotland to eight AI tools used by 10,000+ coaches in 40+ countries. This is how it happened.",
 };
 
 const credentials = [
@@ -26,8 +26,8 @@ export default function About() {
       <Section className="pt-24 md:pt-32">
         <PageTitle>About Kevin</PageTitle>
         <PageIntro>
-          From a muddy pitch in Scotland to building AI tools used across 40+
-          countries.
+          Started with zero qualifications on a muddy pitch in Scotland. Now
+          building AI tools that 10,000+ coaches rely on every week.
         </PageIntro>
       </Section>
 
