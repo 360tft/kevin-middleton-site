@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Section, PageTitle, PageIntro } from "@/components/section";
+import Image from "next/image";
+import { Section, PageTitle, PageIntro } from "@/components/section"
 import { ServiceCard } from "@/components/service-card";
 export const metadata: Metadata = {
   title: "Work With Me",
@@ -71,6 +72,54 @@ export default function WorkWithMe() {
           live products to prove it works. One call is all it takes to get
           started.
         </PageIntro>
+      </Section>
+
+      <Section>
+        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+          <div className="shrink-0">
+            <Image
+              src="/images/kevin-profile.png"
+              alt="Kevin Middleton"
+              width={160}
+              height={160}
+              className="w-[120px] h-[120px] md:w-[160px] md:h-[160px]"
+            />
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 flex-1">
+            <div className="bg-card rounded-xl p-5 border border-border">
+              <p className="text-[13px] font-semibold text-accent-blue uppercase tracking-wide mb-1">
+                What you get
+              </p>
+              <p className="text-[16px] md:text-[18px] font-semibold text-text leading-snug">
+                Your own AI tool, live and working
+              </p>
+            </div>
+            <div className="bg-card rounded-xl p-5 border border-border">
+              <p className="text-[13px] font-semibold text-accent-blue uppercase tracking-wide mb-1">
+                Why it works
+              </p>
+              <p className="text-[16px] md:text-[18px] font-semibold text-text leading-snug">
+                Built by someone who has shipped eight
+              </p>
+            </div>
+            <div className="bg-card rounded-xl p-5 border border-border">
+              <p className="text-[13px] font-semibold text-accent-blue uppercase tracking-wide mb-1">
+                How fast
+              </p>
+              <p className="text-[16px] md:text-[18px] font-semibold text-text leading-snug">
+                Weeks, not months
+              </p>
+            </div>
+            <div className="bg-card rounded-xl p-5 border border-border">
+              <p className="text-[13px] font-semibold text-accent-blue uppercase tracking-wide mb-1">
+                Your effort
+              </p>
+              <p className="text-[16px] md:text-[18px] font-semibold text-text leading-snug">
+                You bring the idea. Kevin brings the code.
+              </p>
+            </div>
+          </div>
+        </div>
       </Section>
 
       <Section>
