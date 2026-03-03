@@ -27,14 +27,13 @@ export default function Home() {
           </div>
           <div>
             <PageTitle>
-              Kevin Middleton is a UEFA Licensed Coach, Author, Football
-              Community Builder and Builder of AI Tools used by thousands of
-              football coaches and players worldwide.
+              I build AI tools that give football coaches answers in seconds
+              instead of hours.
             </PageTitle>
             <PageIntro>
-              Having coached everybody from grassroots to professional, ages 1
-              to 70, Kevin now builds AI solutions for individuals, clubs,
-              federations, and entrepreneurs.
+              UEFA licensed coach. 15+ years on the pitch. Author. Now building
+              the AI tools that 10,000+ coaches across 40+ countries rely on
+              every week.
             </PageIntro>
           </div>
         </div>
@@ -46,7 +45,7 @@ export default function Home() {
 
       <Section>
         <h2 className="text-[22px] md:text-[28px] font-semibold text-text mb-8">
-          Products
+          Eight live products. Thousands of coaches using them daily.
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {featuredProducts.map((product) => (
@@ -68,10 +67,10 @@ export default function Home() {
 
       <Section>
         <CTACard
-          title="Work with Kevin"
-          description="Clubs, federations, and entrepreneurs who want to bring AI into football coaching."
+          title="Want your own AI tool built?"
+          description="Kevin has built eight. Yours could be next. From a 90-minute strategy call to a fully deployed product."
           href="/work-with-me"
-          label="Learn more"
+          label="See how it works"
         />
       </Section>
     </>
