@@ -28,7 +28,7 @@
   --color-beige: #edeadb;
   --color-text: #1a1a1a;
   --color-text-secondary: #555555;
-  --color-accent-blue: #2563eb;
+  --color-accent-blue: #E5A11C;
 }
 
 :root {
@@ -37,7 +37,7 @@
   --foreground: #1a1a1a;
   --card: #ffffff;
   --card-foreground: #1a1a1a;
-  --primary: #2563eb;
+  --primary: #E5A11C;
   --primary-foreground: #ffffff;
   --secondary: #e8e5d6;
   --secondary-foreground: #1a1a1a;
@@ -47,7 +47,7 @@
   --accent-foreground: #1a1a1a;
   --border: #d4d0c1;
   --input: #d4d0c1;
-  --ring: #2563eb;
+  --ring: #E5A11C;
   --popover: #ffffff;
   --popover-foreground: #1a1a1a;
   --destructive: #ef4444;

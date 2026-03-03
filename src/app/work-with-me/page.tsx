@@ -16,7 +16,7 @@ const services = [
     price: "\u00A3297",
     description:
       "90-minute call. We assess your situation, identify opportunities, and create an action plan. Whether you want to build an AI tool, integrate AI into your coaching business, or explore what's possible. This is where it starts.",
-    colour: "#2563eb",
+    colour: "#E5A11C",
   },
   {
     title: "Builder Bootcamp",
@@ -137,7 +137,7 @@ export default function WorkWithMe() {
             href="https://cal.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-3 bg-accent-blue text-white text-[15px] font-medium rounded-full hover:bg-accent-blue/90 transition-colors"
+            className="inline-flex items-center justify-center px-8 py-3 bg-accent-blue text-[#1a1a1a] text-[15px] font-medium rounded-full hover:bg-accent-blue/90 transition-colors"
           >
             Book a strategy call
           </a>

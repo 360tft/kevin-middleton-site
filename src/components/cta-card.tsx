@@ -30,7 +30,7 @@ export function CTACard({
       {external ? (
         <a
           href={href}
-          className="inline-flex items-center justify-center px-8 py-3 bg-accent-blue text-white text-[15px] font-medium rounded-full hover:bg-accent-blue/90 transition-colors"
+          className="inline-flex items-center justify-center px-8 py-3 bg-accent-blue text-[#1a1a1a] text-[15px] font-medium rounded-full hover:bg-accent-blue/90 transition-colors"
           {...linkProps}
         >
           {label}
@@ -38,7 +38,7 @@ export function CTACard({
       ) : (
         <Link
           href={href}
-          className="inline-flex items-center justify-center px-8 py-3 bg-accent-blue text-white text-[15px] font-medium rounded-full hover:bg-accent-blue/90 transition-colors"
+          className="inline-flex items-center justify-center px-8 py-3 bg-accent-blue text-[#1a1a1a] text-[15px] font-medium rounded-full hover:bg-accent-blue/90 transition-colors"
         >
           {label}
         </Link>

@@ -11,7 +11,7 @@ export const products: Product[] = [
     description:
       "AI coaching assistant with 5 modes, 18 specialist advisors, animated drill diagrams, and real stats from 100+ leagues.",
     url: "https://footballgpt.co",
-    colour: "#2563eb",
+    colour: "#16a34a",
   },
   {
     name: "RefereeGPT",
