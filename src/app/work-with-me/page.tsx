@@ -124,6 +124,37 @@ export default function WorkWithMe() {
 
       <Section>
         <h2 className="text-[22px] md:text-[28px] font-semibold text-text mb-8">
+          Who Kevin works with
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="bg-card rounded-xl overflow-hidden border border-border">
+            <Image
+              src="/images/ray-power-masterclass.png"
+              alt="Ray Power CoachPower masterclass: Coaching in the Future - Get Ahead in the Age of AI, featuring Kevin Middleton"
+              width={600}
+              height={315}
+              className="w-full h-auto"
+            />
+            <div className="p-5">
+              <p className="text-[16px] md:text-[18px] font-semibold text-text mb-1">
+                Ray Power &middot; CoachPower
+              </p>
+              <p className="text-[14px] md:text-[15px] text-text-secondary leading-relaxed">
+                Presenting a four-lesson masterclass on AI in football coaching.
+                April&ndash;May 2026.
+              </p>
+            </div>
+          </div>
+          <div className="bg-card rounded-xl border border-border border-dashed flex items-center justify-center p-8">
+            <p className="text-[14px] md:text-[15px] text-text-secondary text-center leading-relaxed">
+              More client work and testimonials coming soon.
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      <Section>
+        <h2 className="text-[22px] md:text-[28px] font-semibold text-text mb-8">
           Services
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
