@@ -5,7 +5,7 @@ import { ServiceCard } from "@/components/service-card";
 export const metadata: Metadata = {
   title: "Work With Me",
   description:
-    "You have an idea for an AI tool. Kevin has built eight. One strategy call and you will have a clear plan to build yours.",
+    "You have an idea for an AI tool. Kevin has built ten. One strategy call and you will have a clear plan to build yours.",
 };
 
 const services = [
@@ -58,7 +58,7 @@ const avatars = [
   },
   {
     title: "Football business owners",
-    description: "You have the audience. You need the product. Kevin has built eight.",
+    description: "You have the audience. You need the product. Kevin has built ten.",
   },
 ];
 
@@ -99,7 +99,7 @@ export default function WorkWithMe() {
                 Why it works
               </p>
               <p className="text-[16px] md:text-[18px] font-semibold text-text leading-snug">
-                Built by someone who has shipped eight
+                Built by someone who has shipped ten
               </p>
             </div>
             <div className="bg-card rounded-xl p-5 border border-border">
@@ -191,7 +191,7 @@ export default function WorkWithMe() {
             One call. A clear plan.
           </h2>
           <p className="text-[16px] md:text-[18px] text-white/70 max-w-[560px] mx-auto mb-6">
-            90 minutes with someone who has built eight AI products from scratch.
+            90 minutes with someone who has built ten AI products from scratch.
             You will leave with a plan, not a pitch.
           </p>
           <a

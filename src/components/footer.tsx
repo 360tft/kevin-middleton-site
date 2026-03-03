@@ -6,7 +6,7 @@ export function Footer() {
       <div className="mx-auto w-[90%] md:w-[83%] max-w-[1200px]">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-[14px] text-text-secondary">
-            Kevin Middleton. Eight AI tools. 10,000+ coaches. 40+ countries.
+            Kevin Middleton. Ten AI tools. 10,000+ coaches. 40+ countries.
           </p>
           <div className="flex items-center gap-6">
             <a

@@ -7,14 +7,14 @@ import { products } from "@/data/products";
 export const metadata: Metadata = {
   title: "Products",
   description:
-    "Eight AI tools that give coaches, referees, and clubs the answers they need in seconds. Used across 40+ countries.",
+    "Ten AI tools that give coaches, referees, and clubs the answers they need in seconds. Used across 40+ countries.",
 };
 
 export default function Products() {
   return (
     <>
       <Section className="pt-24 md:pt-32">
-        <PageTitle>Eight products. Thousands of daily users.</PageTitle>
+        <PageTitle>Ten products. Thousands of daily users.</PageTitle>
         <PageIntro>
           Every tool here started with the same question: what takes coaches
           hours that AI could do in seconds? These are the answers.
@@ -32,7 +32,7 @@ export default function Products() {
       <Section>
         <CTACard
           title="Want Kevin to build yours?"
-          description="Kevin has built eight. Yours could be next. From a 90-minute strategy call to a fully deployed product."
+          description="Kevin has built ten. Yours could be next. From a 90-minute strategy call to a fully deployed product."
           href="/work-with-me"
           label="Start the conversation"
         />

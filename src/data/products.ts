@@ -44,7 +44,7 @@ export const products: Product[] = [
   {
     name: "Football Coaching Academy",
     description:
-      "10,000+ coaches developing better players together. Sessions, game models, and direct access to Kevin.",
+      "1,600+ coaches developing better players together. Sessions, game models, and direct access to Kevin.",
     url: "https://www.skool.com/coachingacademy",
     colour: "#f97316",
   },
@@ -54,5 +54,26 @@ export const products: Product[] = [
       "Help players see their own progress. AI-guided reflection that builds confidence and self-awareness.",
     url: "https://playreflect.com",
     colour: "#ec4899",
+  },
+  {
+    name: "Football Coaching Directory",
+    description:
+      "Find the right coach, club, or programme near you. A searchable directory for the football coaching community.",
+    url: "https://fcd.football",
+    colour: "#0ea5e9",
+  },
+  {
+    name: "360TFT",
+    description:
+      "Free football coaching resources, blog content, and the gateway to the full 360TFT ecosystem.",
+    url: "https://360tft.com",
+    colour: "#E5A11C",
+  },
+  {
+    name: "AI Football Skool",
+    description:
+      "Free AI education for football coaches. A 30-day course, prompts, resources, and a builder bootcamp.",
+    url: "https://www.skool.com/aifootball",
+    colour: "#3b82f6",
   },
 ];

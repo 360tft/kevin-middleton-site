@@ -7,7 +7,7 @@ import { CTACard } from "@/components/cta-card";
 import { products } from "@/data/products";
 import { playerTestimonials } from "@/data/testimonials";
 
-const featuredProducts = products.slice(0, 6);
+const featuredProducts = products;
 const featuredTestimonials = playerTestimonials.slice(0, 3);
 
 export default function Home() {
@@ -45,7 +45,7 @@ export default function Home() {
 
       <Section>
         <h2 className="text-[22px] md:text-[28px] font-semibold text-text mb-8">
-          Eight live products. Thousands of coaches using them daily.
+          Ten live products. Thousands of coaches using them daily.
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {featuredProducts.map((product) => (
@@ -68,7 +68,7 @@ export default function Home() {
       <Section>
         <CTACard
           title="Want your own AI tool built?"
-          description="Kevin has built eight. Yours could be next. From a 90-minute strategy call to a fully deployed product."
+          description="Kevin has built ten. Yours could be next. From a 90-minute strategy call to a fully deployed product."
           href="/work-with-me"
           label="See how it works"
         />

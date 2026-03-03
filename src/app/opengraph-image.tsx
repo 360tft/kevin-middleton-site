@@ -72,7 +72,7 @@ export default async function OGImage() {
               lineHeight: 1.4,
             }}
           >
-            8 live products. 10,000+ coaches. 40+ countries.
+            10 live products. 10,000+ coaches. 40+ countries.
           </span>
         </div>
       </div>

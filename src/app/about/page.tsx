@@ -8,7 +8,7 @@ import { playerTestimonials } from "@/data/testimonials";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "From a muddy pitch in Scotland to eight AI tools used by 10,000+ coaches in 40+ countries. This is how it happened.",
+    "From a muddy pitch in Scotland to ten AI tools used by 10,000+ coaches in 40+ countries. This is how it happened.",
 };
 
 const credentials = [
@@ -16,7 +16,7 @@ const credentials = [
   "Author",
   "15+ Years Coaching",
   "10,000+ Coaches",
-  "8 Live Products",
+  "10 Live Products",
   "1,000+ Players",
 ];
 
@@ -150,7 +150,7 @@ export default function About() {
                 Mode, Scout Mode, and Goalkeeper Mode.
               </p>
               <p>
-                That was the start. Now there are eight live products:
+                That was the start. Now there are ten live products:
                 FootballGPT, RefereeGPT, CoachReflect, CruiseGPT, the AI
                 Football Marketplace, PlayerReflection, the Football Coaching
                 Academy, and the Football Coaching Directory.

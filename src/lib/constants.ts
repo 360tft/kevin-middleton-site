@@ -2,13 +2,13 @@ export const SITE = {
   name: "Kevin Middleton",
   title: "Kevin Middleton | Football AI Expert",
   description:
-    "Builder of eight AI tools used by 10,000+ football coaches across 40+ countries. Kevin helps clubs, federations, and entrepreneurs bring AI into football.",
+    "Builder of ten AI tools used by 10,000+ football coaches across 40+ countries. Kevin helps clubs, federations, and entrepreneurs bring AI into football.",
   url: "https://kevinmiddleton.360tft.com",
 } as const;
 
 export const STATS = [
   { value: "10,000+", label: "Coaches" },
-  { value: "8", label: "Live Products" },
+  { value: "10", label: "Live Products" },
   { value: "15+", label: "Years Coaching" },
   { value: "40+", label: "Countries" },
 ] as const;
