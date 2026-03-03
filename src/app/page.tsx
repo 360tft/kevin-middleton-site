@@ -14,11 +14,14 @@ export default function Home() {
     <>
       <Section className="pt-24 md:pt-32">
         <PageTitle>
-          Kevin Middleton is a UEFA B coach, author, and builder of AI tools
-          used by thousands of football coaches worldwide.
+          Kevin Middleton is a UEFA Licensed Coach, Author, Football Community
+          Builder and Builder of AI Tools used by thousands of football coaches
+          and players worldwide.
         </PageTitle>
         <PageIntro>
-          He helps clubs, federations, and entrepreneurs bring AI into football.
+          Having coached everybody from grassroots to professional, ages 1 to
+          70, Kevin now builds AI solutions for individuals, clubs, federations,
+          and entrepreneurs.
         </PageIntro>
       </Section>
 

@@ -11,10 +11,10 @@ export const metadata: Metadata = {
 };
 
 const credentials = [
-  "UEFA B Licensed",
+  "UEFA Licensed",
   "Author",
-  "20+ Years Coaching",
-  "1,500+ Coaches",
+  "15+ Years Coaching",
+  "10,000+ Coaches",
   "8 Live Products",
   "1,000+ Players",
 ];
@@ -25,7 +25,7 @@ export default function About() {
       <Section className="pt-24 md:pt-32">
         <PageTitle>About Kevin</PageTitle>
         <PageIntro>
-          From a muddy pitch in Scotland to building AI tools used across 24
+          From a muddy pitch in Scotland to building AI tools used across 40+
           countries.
         </PageIntro>
       </Section>

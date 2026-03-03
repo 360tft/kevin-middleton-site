@@ -2,15 +2,15 @@ export const SITE = {
   name: "Kevin Middleton",
   title: "Kevin Middleton | Football AI Expert",
   description:
-    "UEFA B coach, author, and builder of AI tools used by thousands of football coaches worldwide.",
+    "UEFA Licensed Coach, Author, Football Community Builder and Builder of AI Tools used by thousands of football coaches and players worldwide.",
   url: "https://kevinmiddleton.360tft.com",
 } as const;
 
 export const STATS = [
-  { value: "1,500+", label: "Coaches" },
+  { value: "10,000+", label: "Coaches" },
   { value: "8", label: "Live Products" },
-  { value: "20+", label: "Years Coaching" },
-  { value: "24", label: "Countries" },
+  { value: "15+", label: "Years Coaching" },
+  { value: "40+", label: "Countries" },
 ] as const;
 
 export const SOCIAL = {
