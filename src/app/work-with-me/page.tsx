@@ -66,7 +66,7 @@ export default function WorkWithMe() {
   return (
     <>
       <Section className="pt-24 md:pt-32">
-        <PageTitle>Work with Kevin</PageTitle>
+        <PageTitle>Work With Kevin</PageTitle>
         <PageIntro>
           You have the idea. Kevin has the code, the experience, and eight
           live products to prove it works. One call is all it takes to get
@@ -124,7 +124,7 @@ export default function WorkWithMe() {
 
       <Section>
         <h2 className="text-[22px] md:text-[28px] font-semibold text-text mb-8">
-          Who Kevin works with
+          Who Kevin Works With
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="bg-card rounded-xl overflow-hidden border border-border">
@@ -166,7 +166,7 @@ export default function WorkWithMe() {
 
       <Section>
         <h2 className="text-[22px] md:text-[28px] font-semibold text-text mb-8">
-          Who this is for
+          Who This Is For
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {avatars.map((avatar) => (

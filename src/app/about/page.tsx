@@ -48,7 +48,7 @@ export default function About() {
         <div className="max-w-[720px] space-y-12">
           <div>
             <h2 className="text-[20px] md:text-[24px] font-semibold text-text mb-4">
-              The beginning
+              The Beginning
             </h2>
             <div className="space-y-4 text-[16px] md:text-[18px] leading-relaxed text-text-secondary">
               <p>
@@ -67,7 +67,7 @@ export default function About() {
 
           <div>
             <h2 className="text-[20px] md:text-[24px] font-semibold text-text mb-4">
-              Building the system
+              Building the System
             </h2>
             <div className="space-y-4 text-[16px] md:text-[18px] leading-relaxed text-text-secondary">
               <p>
@@ -117,7 +117,7 @@ export default function About() {
 
           <div>
             <h2 className="text-[20px] md:text-[24px] font-semibold text-text mb-4">
-              The book
+              The Book
             </h2>
             <div className="space-y-4 text-[16px] md:text-[18px] leading-relaxed text-text-secondary">
               <p>
@@ -139,7 +139,7 @@ export default function About() {
 
           <div>
             <h2 className="text-[20px] md:text-[24px] font-semibold text-text mb-4">
-              FootballGPT and beyond
+              FootballGPT and Beyond
             </h2>
             <div className="space-y-4 text-[16px] md:text-[18px] leading-relaxed text-text-secondary">
               <p>
@@ -167,7 +167,7 @@ export default function About() {
 
       <Section>
         <h2 className="text-[22px] md:text-[28px] font-semibold text-text mb-8">
-          Professional player endorsements
+          Professional Player Endorsements
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {playerTestimonials.map((t) => (
@@ -178,7 +178,7 @@ export default function About() {
 
       <Section>
         <CTACard
-          title="Work with Kevin"
+          title="Work With Kevin"
           description="Strategy calls, bootcamps, and custom AI builds for football organisations."
           href="/work-with-me"
           label="See options"
