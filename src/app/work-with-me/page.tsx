@@ -5,7 +5,7 @@ import { ServiceCard } from "@/components/service-card";
 export const metadata: Metadata = {
   title: "Work With Me",
   description:
-    "You have an idea for an AI tool. Kevin has built ten. One strategy call and you will have a clear plan to build yours.",
+    "AI tools, football consultancy, or both. Kevin has built ten products and spent 15+ years coaching. One call and you will have a clear plan.",
 };
 
 const services = [
@@ -37,6 +37,13 @@ const services = [
       "Priority access to Kevin after launch. Product direction, technical guidance, and strategic support so your AI tool keeps growing.",
     colour: "#8b5cf6",
   },
+  {
+    title: "Football Consultancy",
+    price: "Bespoke",
+    description:
+      "Kevin visits your programme, observes sessions, and delivers a full report covering strategy, operations, and session quality. Prioritised recommendations you can act on immediately. Follow-up support available.",
+    colour: "#dc2626",
+  },
 ];
 
 const avatars = [
@@ -60,6 +67,10 @@ const avatars = [
     title: "Football business owners",
     description: "You have the audience. You need the product. Kevin has built ten.",
   },
+  {
+    title: "Community programmes",
+    description: "Participation is dropping and you are not sure why. Kevin will find out and tell you how to fix it.",
+  },
 ];
 
 export default function WorkWithMe() {
@@ -68,9 +79,8 @@ export default function WorkWithMe() {
       <Section className="pt-24 md:pt-32">
         <PageTitle>Work With Kevin</PageTitle>
         <PageIntro>
-          You have the idea. Kevin has the code, the experience, and eight
-          live products to prove it works. One call is all it takes to get
-          started.
+          AI tools, football consultancy, or both. Kevin has ten live products
+          and 15+ years on the pitch. One call is all it takes to get started.
         </PageIntro>
       </Section>
 
