@@ -152,7 +152,7 @@ export default function About() {
               <p>
                 That was the start. Now there are ten live products:
                 FootballGPT, RefereeGPT, CoachReflect, CruiseGPT, the AI
-                Football Marketplace, PlayerReflection, the Football Coaching
+                Football Marketplace, PlayReflect, the Football Coaching
                 Academy, and the Football Coaching Directory.
               </p>
               <p>

@@ -25,7 +25,7 @@ const services = [
   },
   {
     title: "Custom AI Build",
-    price: "\u00A35K\u201315K+",
+    price: "\u00A35K to \u00A315K+",
     description:
       "Kevin builds it for you. You get a finished AI product, deployed and ready for users. Flat fee, revenue share, or white-label. The right model is decided on your strategy call.",
     colour: "#f97316",
@@ -151,7 +151,7 @@ export default function WorkWithMe() {
               </p>
               <p className="text-[14px] md:text-[15px] text-text-secondary leading-relaxed">
                 Presenting a four-lesson masterclass on AI in football coaching.
-                April&ndash;May 2026.
+                April to May 2026.
               </p>
             </div>
           </div>
@@ -205,7 +205,7 @@ export default function WorkWithMe() {
             You will leave with a plan, not a pitch.
           </p>
           <a
-            href="https://cal.com"
+            href="https://indiepa.ge/kevinmiddleton"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-3 bg-accent-blue text-[#1a1a1a] text-[15px] font-medium rounded-full hover:bg-accent-blue/90 transition-colors"

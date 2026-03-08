@@ -44,14 +44,14 @@ export const products: Product[] = [
   {
     name: "Football Coaching Academy",
     description:
-      "1,600+ coaches developing better players together. Sessions, game models, and direct access to Kevin.",
+      "10,000+ coaches developing better players together. Sessions, game models, and direct access to Kevin.",
     url: "https://www.skool.com/coachingacademy",
     colour: "#f97316",
   },
   {
-    name: "PlayerReflection",
+    name: "PlayReflect",
     description:
-      "Help players see their own progress. AI-guided reflection that builds confidence and self-awareness.",
+      "100% free for players, forever. AI-guided reflection that builds confidence and self-awareness. Team plans for coaches.",
     url: "https://playreflect.com",
     colour: "#ec4899",
   },
