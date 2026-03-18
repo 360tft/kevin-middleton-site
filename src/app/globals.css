@@ -25,31 +25,30 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  --color-beige: #edeadb;
-  --color-text: #1a1a1a;
-  --color-text-secondary: #555555;
+  --color-text: #f0f0f0;
+  --color-text-secondary: #888888;
   --color-accent-blue: #E5A11C;
 }
 
 :root {
   --radius: 0.625rem;
-  --background: #edeadb;
-  --foreground: #1a1a1a;
-  --card: #ffffff;
-  --card-foreground: #1a1a1a;
+  --background: #080a0d;
+  --foreground: #f0f0f0;
+  --card: #111418;
+  --card-foreground: #f0f0f0;
   --primary: #E5A11C;
-  --primary-foreground: #ffffff;
-  --secondary: #e8e5d6;
-  --secondary-foreground: #1a1a1a;
-  --muted: #e8e5d6;
-  --muted-foreground: #555555;
-  --accent: #e8e5d6;
-  --accent-foreground: #1a1a1a;
-  --border: #d4d0c1;
-  --input: #d4d0c1;
+  --primary-foreground: #080a0d;
+  --secondary: #111418;
+  --secondary-foreground: #f0f0f0;
+  --muted: #1e2229;
+  --muted-foreground: #888888;
+  --accent: #1e2229;
+  --accent-foreground: #f0f0f0;
+  --border: #1e2229;
+  --input: #1e2229;
   --ring: #E5A11C;
-  --popover: #ffffff;
-  --popover-foreground: #1a1a1a;
+  --popover: #111418;
+  --popover-foreground: #f0f0f0;
   --destructive: #ef4444;
 }
 
