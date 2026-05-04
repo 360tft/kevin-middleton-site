@@ -4,18 +4,28 @@ export interface Credential {
   url?: string;
 }
 
-// Ordered most-successful-first. The order is the message:
-// paying communities and shipped SaaS at the top, supporting credentials underneath.
+// Numbers verified against /home/kevin/360tft-hub/data/portfolio-metrics.json (2026-05-04).
+// Do not edit numbers without refreshing portfolio-metrics.json first.
 export const credentials: Credential[] = [
   {
+    name: "FootballGPT",
+    metric: "7,000+ registered coaches, AI for coaching",
+    url: "https://footballgpt.co",
+  },
+  {
     name: "Football Coaching Academy",
-    metric: "10,000+ paying coaches",
+    metric: "1,800 member Skool community",
     url: "https://www.skool.com/coachingacademy",
   },
   {
-    name: "FootballGPT",
-    metric: "4,000+ coaches, AI for coaching",
-    url: "https://footballgpt.co",
+    name: "CruiseGPT",
+    metric: "59,000+ sailings, 14 AI advisors",
+    url: "https://360cruising.com",
+  },
+  {
+    name: "Gumroad store",
+    metric: "39 coaching resources, buyers in 47 countries",
+    url: "https://kev1wired.gumroad.com",
   },
   {
     name: "The Rise of the Dogmatic Football Coach",
@@ -27,14 +37,9 @@ export const credentials: Credential[] = [
     metric: "4 lessons × 60 minutes, AI for coaches",
   },
   {
-    name: "CoachPa.ge",
-    metric: "Coach profile SaaS, paying customers",
-    url: "https://coachpa.ge",
-  },
-  {
-    name: "CruiseGPT",
-    metric: "59,000+ sailings, 14 AI advisors",
-    url: "https://360cruising.com",
+    name: "CoachReflect",
+    metric: "AI coaching journal, 121 coaches",
+    url: "https://coachreflection.com",
   },
   {
     name: "RefereeGPT",
@@ -42,24 +47,29 @@ export const credentials: Credential[] = [
     url: "https://refereegpt.co",
   },
   {
-    name: "CoachReflect",
-    metric: "AI coaching journal",
-    url: "https://coachreflection.com",
+    name: "AI Football Skool",
+    metric: "Free 30-day AI course, 122 members",
+    url: "https://www.skool.com/aifootball",
   },
   {
-    name: "AI Football Skool",
-    metric: "200+ members, free 30-day course",
-    url: "https://www.skool.com/aifootball",
+    name: "360TFT Skool",
+    metric: "153 member free coaching community",
+    url: "https://www.skool.com/360tft-7374",
+  },
+  {
+    name: "CoachPa.ge",
+    metric: "Coach profile SaaS, paying customers",
+    url: "https://coachpa.ge",
+  },
+  {
+    name: "Football Coaching Directory",
+    metric: "Searchable coach directory",
+    url: "https://fcd.football",
   },
   {
     name: "PlayReflect",
     metric: "100% free for players",
     url: "https://playreflect.com",
-  },
-  {
-    name: "Football Coaching Directory",
-    metric: "Searchable directory",
-    url: "https://fcd.football",
   },
   {
     name: "AI Football Marketplace",
@@ -68,18 +78,8 @@ export const credentials: Credential[] = [
   },
   {
     name: "The 2 Drill Club",
-    metric: "Skool community",
+    metric: "Skool community for $2/mo drills",
     url: "https://www.skool.com/the-2-drill-club-5017",
-  },
-  {
-    name: "360TFT Skool",
-    metric: "Free coaching community",
-    url: "https://www.skool.com/360tft-7374",
-  },
-  {
-    name: "Gumroad store",
-    metric: "30+ coaching resources",
-    url: "https://kev1wired.gumroad.com",
   },
   {
     name: "UEFA Licensed coach",
