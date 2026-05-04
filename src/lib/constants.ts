@@ -41,5 +41,5 @@ export const CONSULTING = {
     },
   ],
   ctaLabel: "Book a consultation",
-  ctaUrl: "https://cal.com/kevin-middleton",
+  ctaUrl: "https://cal.com/coachkevinm/consultation",
 } as const;
