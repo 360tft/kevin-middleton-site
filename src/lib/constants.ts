@@ -1,28 +1,45 @@
 export const SITE = {
   name: "Kevin Middleton",
-  title: "Kevin Middleton | Football AI Expert",
+  title: "Kevin Middleton | Football AI Consulting",
   description:
-    "Builder of ten AI tools used by 10,000+ football coaches across 40+ countries. Kevin helps clubs, federations, and entrepreneurs bring AI into football.",
+    "Football coach and AI builder. 11 shipped products. 10,000+ coaches. Available for paid AI consulting at $500/hr.",
   url: "https://kevinmiddleton.360tft.com",
 } as const;
-
-export const STATS = [
-  { value: "10,000+", label: "Coaches" },
-  { value: "10", label: "Live Products" },
-  { value: "15+", label: "Years Coaching" },
-  { value: "40+", label: "Countries" },
-] as const;
 
 export const SOCIAL = {
   twitter: "https://x.com/coach_kevin_m",
   twitterBrand: "https://x.com/360_tft",
-  telegram: "https://t.me/kmcoacheducation",
-  indiePage: "https://indiepa.ge/kevinmiddleton",
+  instagram: "https://www.instagram.com/coach_kevin_middleton",
+  linkedin: "https://www.linkedin.com/in/kevinmiddleton82/",
+  youtube: "https://www.youtube.com/@360TFT",
+  telegram: "https://t.me/+eO5eH4JTL01iYTJk",
+  whatsapp: "https://chat.whatsapp.com/KLGVG3ro1npHC5mHiI0Pmq",
+  email: "admin@360tft.com",
 } as const;
 
-export const NAV_LINKS = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Products", href: "/products" },
-  { label: "Work With Me", href: "/work-with-me" },
-] as const;
+export const CONSULTING = {
+  title: "Consulting",
+  price: "$500/hr",
+  headline: "Skip a year of trial and error on AI for football.",
+  subhead:
+    "A focused session for clubs, coaches, and football founders who want the build, distribution, and coaching-fluency lessons without learning them the expensive way.",
+  points: [
+    {
+      title: "Build",
+      body:
+        "I look at what you want to ship and tell you exactly how to build it. Stack, prompts, costs, what to skip. I have shipped 11 AI products in football, so the answers come from real builds, not theory.",
+    },
+    {
+      title: "Coaching fluency",
+      body:
+        "Most AI consultants do not know coaching. I do. I will tell you why your tool is not landing with coaches and what to change so it does.",
+    },
+    {
+      title: "Connection",
+      body:
+        "After the call, you can message me for quick second opinions on builds, prompts, or product decisions.",
+    },
+  ],
+  ctaLabel: "Book a consultation",
+  ctaUrl: "https://cal.com/coachkevinm/consultation",
+} as const;
