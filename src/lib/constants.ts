@@ -2,7 +2,7 @@ export const SITE = {
   name: "Kevin Middleton",
   title: "Kevin Middleton | Football AI Consulting",
   description:
-    "Football coach and AI builder. 11 shipped products. 10,000+ coaches. Available for paid AI consulting at $500/hr.",
+    "Football coach and AI builder. 8 live AI products. 7,000+ coaches on FootballGPT. Available for paid AI consulting at $500/hr.",
   url: "https://kevinmiddleton.360tft.com",
 } as const;
 
@@ -27,7 +27,7 @@ export const CONSULTING = {
     {
       title: "Build",
       body:
-        "I look at what you want to ship and tell you exactly how to build it. Stack, prompts, costs, what to skip. I have shipped 11 AI products in football, so the answers come from real builds, not theory.",
+        "I look at what you want to ship and tell you exactly how to build it. Stack, prompts, costs, what to skip. Eight live AI products in football, so the answers come from real builds, not theory.",
     },
     {
       title: "Coaching fluency",
