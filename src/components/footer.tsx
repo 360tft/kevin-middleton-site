@@ -8,7 +8,8 @@ const COMMUNITIES = [
 ];
 
 const RESOURCES = [
-  { label: "Gumroad store", href: "https://kev1wired.gumroad.com" },
+  { label: "The Coach System (premium.360tft.com)", href: "https://premium.360tft.com" },
+  { label: "Full library (360tft.com)", href: "https://360tft.com" },
   { label: "Book on Amazon", href: "https://www.amazon.co.uk/dp/B0GF9VSGKG" },
   { label: "Telegram channel", href: SOCIAL.telegram },
   { label: "WhatsApp group", href: SOCIAL.whatsapp },
