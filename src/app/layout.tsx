@@ -44,13 +44,15 @@ const structuredData = {
     {
       "@type": "Person",
       name: "Kevin Middleton",
-      jobTitle: "Football AI Expert",
+      jobTitle: "UEFA licensed football coach and AI builder",
       description: SITE.description,
       url: SITE.url,
       sameAs: [
         "https://x.com/coach_kevin_m",
         "https://indiepa.ge/kevinmiddleton",
         "https://t.me/kmcoacheducation",
+        "https://premium.360tft.com",
+        "https://360tft.com",
       ],
       knowsAbout: [
         "Football Coaching",

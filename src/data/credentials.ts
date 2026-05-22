@@ -8,8 +8,12 @@ export interface Credential {
 // Do not edit numbers without refreshing portfolio-metrics.json first.
 export const credentials: Credential[] = [
   {
+    name: "UEFA Licensed coach",
+    metric: "Assistant manager when Hamilton Academical Women's won SWPL 2 in 2024/25. Head of Pre Academy at Montrose FC. Coached at Arbroath FC, Arbroath FC Women, 360TFT. 15 years coaching 1,000+ players age 1-70.",
+  },
+  {
     name: "FootballGPT",
-    metric: "7,000+ registered coaches, AI for coaching",
+    metric: "8,000+ registered coaches, AI for coaching",
     url: "https://footballgpt.co",
   },
   {
@@ -80,9 +84,5 @@ export const credentials: Credential[] = [
     name: "The 2 Drill Club",
     metric: "Skool community for $2/mo drills",
     url: "https://www.skool.com/the-2-drill-club-5017",
-  },
-  {
-    name: "UEFA Licensed coach",
-    metric: "15+ years pro level — Birmingham, Newcastle, Salford",
   },
 ];
