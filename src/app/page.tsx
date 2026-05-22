@@ -24,6 +24,9 @@ export default function Home() {
           </div>
 
           <div className="flex-1 max-w-[680px]">
+            <p className="text-[11px] font-mono uppercase tracking-[0.18em] text-[#E5A11C] mb-3">
+              Learn from my mistakes before you make the same ones.
+            </p>
             <h1 className="text-[32px] md:text-[44px] lg:text-[52px] font-semibold leading-[1.1] tracking-tight text-[#f0f0f0] mb-5">
               Kevin Middleton
             </h1>
