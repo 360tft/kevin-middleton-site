@@ -3,7 +3,7 @@ import { Section } from "@/components/section";
 import { ConsultingCard } from "@/components/consulting-card";
 import { CredentialsList } from "@/components/credentials-list";
 import { CoachingLadder } from "@/components/coaching-ladder";
-import { HERO_PRIMARY_CTA, CONSULTING, STORES } from "@/lib/constants";
+import { HERO_CHEAT_SHEET_CTA, CONSULTING, STORES } from "@/lib/constants";
 
 export default function Home() {
   return (
@@ -25,45 +25,55 @@ export default function Home() {
 
           <div className="flex-1 max-w-[680px]">
             <p className="text-[11px] font-mono uppercase tracking-[0.18em] text-[#E5A11C] mb-3">
-              Learn from my mistakes before you make the same ones.
+              AI strategy for football founders, clubs and federations
             </p>
             <h1 className="text-[32px] md:text-[44px] lg:text-[52px] font-semibold leading-[1.1] tracking-tight text-[#f0f0f0] mb-5">
               Kevin Middleton
             </h1>
             <p className="text-[16px] md:text-[18px] text-[#888] leading-relaxed mb-7">
-              Assistant manager when Hamilton Academical Women&apos;s won SWPL 2 in 2024/25. Coached 1,000+ players on the pitch. Built 8 AI products and 4 communities now used by 10,000+ coaches — 8,000+ on FootballGPT alone.
+              I help football founders, clubs and federations build AI that coaches actually use. No months lost on the wrong stack, no prompts that fall flat with coaches, no costs that spiral. The advice comes from eight live football AI products I have built and run, not theory.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <a
-                href={HERO_PRIMARY_CTA.url}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#book-a-call"
                 className="inline-flex items-center justify-center px-5 py-3 bg-[#E5A11C] hover:bg-[#d49417] text-[#0a0c0f] font-semibold text-[14px] rounded-lg transition-colors"
               >
-                {HERO_PRIMARY_CTA.label}
+                Book a call ({CONSULTING.price})
               </a>
               <a
-                href="#book-a-call"
+                href={HERO_CHEAT_SHEET_CTA.url}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-5 py-3 border border-[#1e2229] hover:border-[#2a2f37] text-[#e0e0e0] font-medium text-[14px] rounded-lg transition-colors"
               >
-                Book a call — {CONSULTING.price}
+                {HERO_CHEAT_SHEET_CTA.label}
               </a>
             </div>
           </div>
         </div>
       </Section>
 
+      {/* ── Book a Call ──────────────────────────────────────────────── */}
+      <Section id="book-a-call" className="pt-0 pb-16 md:pb-20">
+        <div className="mb-6">
+          <p className="text-[11px] font-mono tracking-[0.15em] text-[#555] uppercase mb-3">
+            Book a Call: one hour with me direct
+          </p>
+        </div>
+        <ConsultingCard />
+      </Section>
+
       {/* ── Work (AI) ────────────────────────────────────────────────── */}
       <Section id="work" className="pt-0 pb-16 md:pb-20">
         <div className="mb-6">
           <p className="text-[11px] font-mono tracking-[0.15em] text-[#555] uppercase mb-3">
-            Work — AI for football
+            Work: AI for football
           </p>
           <h2 className="text-[22px] md:text-[28px] font-semibold tracking-tight text-[#f0f0f0] mb-3">
             For clubs, federations and football founders.
           </h2>
           <p className="text-[15px] text-[#888] leading-relaxed max-w-[640px]">
-            Built 8 AI products and 4 communities now used by 10,000+ coaches. FootballGPT alone has 8,000+. If you want to build AI that coaches actually use, this is the work — and the stack — to study.
+            Built 8 AI products and 4 communities now used by 10,000+ coaches. FootballGPT alone has 8,000+. If you want to build AI that coaches actually use, this is the work, and the stack, to study.
           </p>
         </div>
         <CredentialsList />
@@ -73,7 +83,7 @@ export default function Home() {
       <Section id="coaching" className="pt-0 pb-16 md:pb-20">
         <div className="mb-6">
           <p className="text-[11px] font-mono tracking-[0.15em] text-[#555] uppercase mb-3">
-            Coaching — for grassroots & academy coaches
+            Coaching: for grassroots & academy coaches
           </p>
           <h2 className="text-[22px] md:text-[28px] font-semibold tracking-tight text-[#f0f0f0] mb-3">
             The resources I built across 15 years on the grass.
@@ -83,16 +93,6 @@ export default function Home() {
           </p>
         </div>
         <CoachingLadder />
-      </Section>
-
-      {/* ── Book a Call ──────────────────────────────────────────────── */}
-      <Section id="book-a-call" className="pt-0 pb-16 md:pb-20">
-        <div className="mb-6">
-          <p className="text-[11px] font-mono tracking-[0.15em] text-[#555] uppercase mb-3">
-            Book a Call — one hour with me direct
-          </p>
-        </div>
-        <ConsultingCard />
       </Section>
 
       {/* ── About ────────────────────────────────────────────────────── */}
