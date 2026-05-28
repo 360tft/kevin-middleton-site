@@ -20,25 +20,18 @@ export const SOCIAL = {
 export const CONSULTING = {
   title: "Book a Call",
   price: "$250/hr",
-  headline: "One hour with me, on video.",
-  subhead:
-    "AI strategy, coaching, hiring, or the next move. For clubs, coaches, and founders who want a focused hour with someone who has built and coached at the same time.",
-  points: [
-    {
-      title: "Build",
-      body:
-        "I look at what you want to ship and tell you exactly how to build it. Stack, prompts, costs, what to skip. Eight live AI products in football, so the answers come from real builds, not theory.",
-    },
-    {
-      title: "Coaching fluency",
-      body:
-        "Most AI consultants do not know coaching. I do. I will tell you why your tool is not landing with coaches and what to change so it does.",
-    },
-    {
-      title: "Connection",
-      body:
-        "After the call, you can message me for quick second opinions on builds, prompts, or product decisions.",
-    },
+  headline: "One focused hour with someone who has built and coached at the same time.",
+  differentiator:
+    "Most AI consultants do not know coaching. I do. I will tell you why your tool is not landing with coaches and exactly what to change so it does.",
+  whatYouGet: [
+    "A build plan: stack, prompts, costs, and what to skip",
+    "Why your product is not landing with coaches, and how to fix it",
+    "A straight answer on the next move: build, hire, or kill it",
+    "Message access after the call for quick second opinions",
+  ],
+  howIWork: [
+    "Eight live AI products in football, so the answers come from real builds, not theory",
+    "You leave with a plan you can action that week, not a slide deck or a report",
   ],
   ctaLabel: "Book a call",
   ctaUrl: "https://cal.com/coachkevinm/consultation",
@@ -77,8 +70,8 @@ export const COACHING_LADDER = [
   },
 ] as const;
 
-export const HERO_PRIMARY_CTA = {
-  label: "Start free — grab my Small-Sided Games cheat sheet",
+export const HERO_CHEAT_SHEET_CTA = {
+  label: "Free coaching cheat sheet",
   url: `https://premium.360tft.com/l/ssg-cheat-sheet?${UTM}&utm_medium=hero&utm_campaign=ssg-leadmagnet`,
 } as const;
 
