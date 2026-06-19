@@ -5,10 +5,22 @@ export function Nav() {
     <nav className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50">
       <div className="flex items-center gap-1 bg-[rgba(10,10,10,0.92)] backdrop-blur-md rounded-full px-2 py-2 border border-[#1e2229]">
         <a
-          href="#work"
+          href="/#work"
           className="text-[13px] text-[#aaa] hover:text-[#f0f0f0] px-4 py-1.5 rounded-full transition-colors"
         >
           Work
+        </a>
+        <a
+          href="/tweets"
+          className="text-[13px] text-[#aaa] hover:text-[#f0f0f0] px-4 py-1.5 rounded-full transition-colors"
+        >
+          Tweets
+        </a>
+        <a
+          href="/videos"
+          className="text-[13px] text-[#aaa] hover:text-[#f0f0f0] px-4 py-1.5 rounded-full transition-colors"
+        >
+          Videos
         </a>
         <a
           href={CONSULTING.ctaUrl}
