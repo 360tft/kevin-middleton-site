@@ -1,5 +1,5 @@
 // Auto-generated from Twitter official archive (2026-06-13) — do not edit by hand.
-// Regenerate: cd /home/kevin/360tft-hub && npx tsx scripts/gen-kevin-tweets.ts
+// Regenerate: node /tmp/gen-kevin-tweets.mjs
 
 export interface Tweet {
   id: string;
