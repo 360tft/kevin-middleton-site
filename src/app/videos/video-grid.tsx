@@ -1,18 +1,40 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 import type { YouTubeVideo } from "@/data/youtube-videos";
+
+const PAGE_SIZE = 24;
 
 interface VideoGridProps {
   videos: YouTubeVideo[];
 }
 
 export function VideoGrid({ videos }: VideoGridProps) {
+  const [shown, setShown] = useState(PAGE_SIZE);
+  const visible = videos.slice(0, shown);
+  const hasMore = shown < videos.length;
+
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
-      {videos.map((video) => (
-        <VideoCard key={video.id} video={video} />
-      ))}
+    <div>
+      <p className="text-[12px] font-mono text-[#666] mb-6">
+        {videos.length} videos
+      </p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+        {visible.map((video) => (
+          <VideoCard key={video.id} video={video} />
+        ))}
+      </div>
+      {hasMore && (
+        <div className="mt-10 flex justify-center">
+          <button
+            onClick={() => setShown((s) => s + PAGE_SIZE)}
+            className="text-[13px] font-mono text-[#888] hover:text-[#E5A11C] border border-[#1e2229] hover:border-[#E5A11C] px-6 py-2.5 rounded-lg transition-colors"
+          >
+            Load more ({videos.length - shown} remaining)
+          </button>
+        </div>
+      )}
     </div>
   );
 }

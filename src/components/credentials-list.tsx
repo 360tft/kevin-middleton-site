@@ -16,13 +16,13 @@ export function CredentialsList() {
         {shown.map((c, i) => {
           const content = (
             <>
-              <span className="text-[12px] font-mono text-[#444] tabular-nums w-7 shrink-0">
+              <span className="text-[12px] font-mono text-[#777] tabular-nums w-7 shrink-0">
                 {String(i + 1).padStart(2, "0")}
               </span>
               <span className="text-[15px] md:text-[16px] text-[#e0e0e0] font-medium flex-1 min-w-0">
                 {c.name}
               </span>
-              <span className="text-[13px] text-[#666] hidden md:inline text-right">
+              <span className="text-[13px] text-[#999] hidden md:inline text-right">
                 {c.metric}
               </span>
               {c.url ? (
@@ -39,7 +39,7 @@ export function CredentialsList() {
           );
 
           const mobileMetric = (
-            <span className="text-[13px] text-[#666] md:hidden mt-1 block pl-[44px]">
+            <span className="text-[13px] text-[#999] md:hidden mt-1 block pl-[44px]">
               {c.metric}
             </span>
           );
