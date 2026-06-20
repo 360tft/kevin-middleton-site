@@ -83,7 +83,6 @@ export function TweetsClient({ tweets }: TweetsClientProps) {
 function TweetRow({ tweet }: { tweet: Tweet }) {
   const [expanded, setExpanded] = useState(false);
 
-  // Show a truncated preview for long tweets
   const isLong = tweet.text.length > 280;
   const preview = isLong && !expanded ? tweet.text.slice(0, 280).trimEnd() + "…" : tweet.text;
 
@@ -92,14 +91,30 @@ function TweetRow({ tweet }: { tweet: Tweet }) {
       <p className="text-[15px] text-[#ccc] leading-relaxed whitespace-pre-wrap break-words">
         {preview}
       </p>
-      {isLong && (
-        <button
-          onClick={() => setExpanded((e) => !e)}
-          className="mt-2 text-[12px] font-mono text-[#555] hover:text-[#E5A11C] transition-colors"
-        >
-          {expanded ? "Show less" : "Show more"}
-        </button>
-      )}
+      <div className="mt-2 flex items-center gap-4">
+        {isLong && (
+          <button
+            onClick={() => setExpanded((e) => !e)}
+            className="text-[12px] font-mono text-[#555] hover:text-[#E5A11C] transition-colors"
+          >
+            {expanded ? "Show less" : "Show more"}
+          </button>
+        )}
+        <div className="flex items-center gap-3 text-[12px] font-mono text-[#444]">
+          {tweet.date && <span>{tweet.date}</span>}
+          {tweet.likes > 0 && <span>{tweet.likes} ♥</span>}
+          {tweet.url && (
+            <a
+              href={tweet.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#555] hover:text-[#E5A11C] transition-colors"
+            >
+              →
+            </a>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
