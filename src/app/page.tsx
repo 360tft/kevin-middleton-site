@@ -103,7 +103,7 @@ export default function Home() {
           </p>
         </div>
         <p className="text-[16px] md:text-[18px] text-[#aaa] leading-relaxed max-w-[720px]">
-          UEFA licensed. 15 years in Scottish football, coaching over 1,000 players from age 1 to 70, at grassroots and pro level. Assistant manager at Hamilton Academical Women&apos;s when we won SWPL 2. Head of Pre Academy at Montrose FC. Coached at Arbroath FC, Arbroath FC Women and 360TFT. The resources here are ones I built along the way, that I wish I&apos;d had when I first started coaching.
+          UEFA licensed. 15 years in Scottish football, coaching over 1,000 players from age 1 to 70, at grassroots and pro level. Assistant manager at Hamilton Academical Women&apos;s when we won SWPL 2. Coached at Arbroath FC, Arbroath FC Women and 360TFT. The resources here are ones I built along the way, that I wish I&apos;d had when I first started coaching.
         </p>
         <p className="text-[14px] text-[#666] leading-relaxed max-w-[720px] mt-6">
           Library of individual coaching resources lives at{" "}
