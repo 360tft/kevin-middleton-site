@@ -12,7 +12,7 @@ export function CoachingLadder() {
           className="group block bg-[#0d1014] border border-[#1e2229] rounded-xl p-6 md:p-7 hover:border-[#E5A11C] transition-colors"
         >
           <div className="flex items-baseline justify-between gap-4 mb-3">
-            <span className="text-[11px] font-mono uppercase tracking-[0.15em] text-[#666]">
+            <span className="text-[11px] font-mono uppercase tracking-[0.15em] text-[#999]">
               {offer.tier}
             </span>
             <span className="text-[13px] font-mono text-[#E5A11C]">
@@ -22,7 +22,7 @@ export function CoachingLadder() {
           <h3 className="text-[18px] md:text-[20px] font-semibold text-[#f0f0f0] leading-tight mb-3 tracking-tight group-hover:text-[#E5A11C] transition-colors">
             {offer.name}
           </h3>
-          <p className="text-[14px] text-[#888] leading-relaxed">
+          <p className="text-[14px] text-[#c0c0c0] leading-relaxed">
             {offer.blurb}
           </p>
         </a>

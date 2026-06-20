@@ -4,7 +4,7 @@ export function ConsultingCard() {
   return (
     <div className="bg-[#0d1014] border border-[#1e2229] rounded-xl p-7 md:p-10">
       <div className="flex items-baseline justify-between gap-4 mb-6">
-        <span className="text-[13px] font-mono uppercase tracking-[0.15em] text-[#aaa]">
+        <span className="text-[13px] font-mono uppercase tracking-[0.15em] text-[#c0c0c0]">
           {CONSULTING.title}
         </span>
         <span className="text-[14px] font-mono text-[#E5A11C]">
@@ -16,14 +16,14 @@ export function ConsultingCard() {
         <h2 className="text-[22px] md:text-[30px] font-semibold text-[#f0f0f0] leading-tight mb-4 tracking-tight">
           {CONSULTING.headline}
         </h2>
-        <p className="text-[15px] md:text-[16px] text-[#aaa] leading-relaxed max-w-[640px]">
+        <p className="text-[15px] md:text-[16px] text-[#c0c0c0] leading-relaxed max-w-[640px]">
           {CONSULTING.differentiator}
         </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 border-t border-[#1e2229] pt-8 mb-8">
         <div>
-          <p className="text-[13px] font-mono uppercase tracking-[0.15em] text-[#666] mb-4">
+          <p className="text-[13px] font-mono uppercase tracking-[0.15em] text-[#999] mb-4">
             What you get
           </p>
           <ul className="space-y-3">
@@ -41,7 +41,7 @@ export function ConsultingCard() {
           </ul>
         </div>
         <div>
-          <p className="text-[13px] font-mono uppercase tracking-[0.15em] text-[#666] mb-4">
+          <p className="text-[13px] font-mono uppercase tracking-[0.15em] text-[#999] mb-4">
             How I work
           </p>
           <ul className="space-y-3">

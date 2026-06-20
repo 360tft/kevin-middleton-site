@@ -9,6 +9,10 @@ export const metadata: Metadata = {
     "YouTube videos from Kevin Middleton on football coaching, player development, and building AI for football.",
 };
 
+const longFormVideos = youtubeVideos.filter(
+  (v) => !/#shorts/i.test(v.title ?? "")
+);
+
 export default function VideosPage() {
   return (
     <Section className="pt-28 md:pt-36 pb-32">
@@ -18,7 +22,7 @@ export default function VideosPage() {
         </p>
         <PageTitle>Videos</PageTitle>
         <PageIntro>
-          Coaching content, AI in football, and building in public — all on the{" "}
+          Long-form coaching content, AI in football, and building in public — all on the{" "}
           <a
             href="https://www.youtube.com/@360TFT"
             target="_blank"
@@ -31,10 +35,10 @@ export default function VideosPage() {
         </PageIntro>
       </div>
 
-      {youtubeVideos.length === 0 ? (
+      {longFormVideos.length === 0 ? (
         <EmptyState />
       ) : (
-        <VideoGrid videos={youtubeVideos} />
+        <VideoGrid videos={longFormVideos} />
       )}
     </Section>
   );

@@ -30,7 +30,7 @@ export default function Home() {
             <h1 className="text-[32px] md:text-[44px] lg:text-[52px] font-semibold leading-[1.1] tracking-tight text-[#f0f0f0] mb-5">
               Kevin Middleton
             </h1>
-            <p className="text-[16px] md:text-[18px] text-[#888] leading-relaxed mb-7">
+            <p className="text-[16px] md:text-[18px] text-[#c0c0c0] leading-relaxed mb-7">
               I help football founders, clubs and federations build AI that coaches actually use. No months lost on the wrong stack, no prompts that fall flat with coaches, no costs that spiral. The advice comes from eight live football AI products I have built and run, not theory.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
@@ -56,7 +56,7 @@ export default function Home() {
       {/* ── Book a Call ──────────────────────────────────────────────── */}
       <Section id="book-a-call" className="pt-0 pb-16 md:pb-20">
         <div className="mb-6">
-          <p className="text-[11px] font-mono tracking-[0.15em] text-[#555] uppercase mb-3">
+          <p className="text-[11px] font-mono tracking-[0.15em] text-[#888] uppercase mb-3">
             Book a Call: one hour with me direct
           </p>
         </div>
@@ -66,13 +66,13 @@ export default function Home() {
       {/* ── Work (AI) ────────────────────────────────────────────────── */}
       <Section id="work" className="pt-0 pb-16 md:pb-20">
         <div className="mb-6">
-          <p className="text-[11px] font-mono tracking-[0.15em] text-[#555] uppercase mb-3">
+          <p className="text-[11px] font-mono tracking-[0.15em] text-[#888] uppercase mb-3">
             Work: AI for football
           </p>
           <h2 className="text-[22px] md:text-[28px] font-semibold tracking-tight text-[#f0f0f0] mb-3">
             For clubs, federations and football founders.
           </h2>
-          <p className="text-[15px] text-[#888] leading-relaxed max-w-[640px]">
+          <p className="text-[15px] text-[#c0c0c0] leading-relaxed max-w-[640px]">
             Built 8 AI products and 4 communities now used by 10,000+ coaches. FootballGPT alone has 8,000+. If you want to build AI that coaches actually use, this is the work, and the stack, to study.
           </p>
         </div>
@@ -82,13 +82,13 @@ export default function Home() {
       {/* ── Coaching ─────────────────────────────────────────────────── */}
       <Section id="coaching" className="pt-0 pb-16 md:pb-20">
         <div className="mb-6">
-          <p className="text-[11px] font-mono tracking-[0.15em] text-[#555] uppercase mb-3">
+          <p className="text-[11px] font-mono tracking-[0.15em] text-[#888] uppercase mb-3">
             Coaching: for grassroots & academy coaches
           </p>
           <h2 className="text-[22px] md:text-[28px] font-semibold tracking-tight text-[#f0f0f0] mb-3">
             The resources I built across 15 years on the grass.
           </h2>
-          <p className="text-[15px] text-[#888] leading-relaxed max-w-[640px]">
+          <p className="text-[15px] text-[#c0c0c0] leading-relaxed max-w-[640px]">
             UEFA licensed. Assistant manager when Hamilton Academical Women&apos;s won SWPL 2 in 2024/25. The pack below is what I wish I&apos;d had when I first started coaching.
           </p>
         </div>
@@ -98,14 +98,14 @@ export default function Home() {
       {/* ── About ────────────────────────────────────────────────────── */}
       <Section id="about" className="pt-0 pb-32">
         <div className="mb-6">
-          <p className="text-[11px] font-mono tracking-[0.15em] text-[#555] uppercase mb-3">
+          <p className="text-[11px] font-mono tracking-[0.15em] text-[#888] uppercase mb-3">
             About
           </p>
         </div>
-        <p className="text-[16px] md:text-[18px] text-[#aaa] leading-relaxed max-w-[720px]">
+        <p className="text-[16px] md:text-[18px] text-[#c0c0c0] leading-relaxed max-w-[720px]">
           UEFA licensed. 15 years in Scottish football, coaching over 1,000 players from age 1 to 70, at grassroots and pro level. Assistant manager at Hamilton Academical Women&apos;s when we won SWPL 2. Coached at Arbroath FC, Arbroath FC Women and 360TFT. The resources here are ones I built along the way, that I wish I&apos;d had when I first started coaching.
         </p>
-        <p className="text-[14px] text-[#666] leading-relaxed max-w-[720px] mt-6">
+        <p className="text-[14px] text-[#999] leading-relaxed max-w-[720px] mt-6">
           Library of individual coaching resources lives at{" "}
           <a href={STORES.library} target="_blank" rel="noopener noreferrer" className="underline hover:text-[#E5A11C]">
             360tft.com
