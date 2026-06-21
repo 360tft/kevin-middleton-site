@@ -89,7 +89,7 @@ export default function Home() {
             The resources I built across 15 years on the grass.
           </h2>
           <p className="text-[15px] text-[#c0c0c0] leading-relaxed max-w-[640px]">
-            UEFA licensed. Assistant manager when Hamilton Academical Women&apos;s won SWPL 2 in 2024/25. The pack below is what I wish I&apos;d had when I first started coaching.
+            Assistant manager when Hamilton Academical Women&apos;s won SWPL 2 in 2024/25. Coached at Arbroath FC, Arbroath FC Women, 360TFT. 15 years coaching 1,000+ players age 1&ndash;70. The pack below is what I wish I&apos;d had when I first started.
           </p>
         </div>
         <CoachingLadder />
@@ -103,7 +103,7 @@ export default function Home() {
           </p>
         </div>
         <p className="text-[16px] md:text-[18px] text-[#c0c0c0] leading-relaxed max-w-[720px]">
-          UEFA licensed. 15 years in Scottish football, coaching over 1,000 players from age 1 to 70, at grassroots and pro level. Assistant manager at Hamilton Academical Women&apos;s when we won SWPL 2. Coached at Arbroath FC, Arbroath FC Women and 360TFT. The resources here are ones I built along the way, that I wish I&apos;d had when I first started coaching.
+          Assistant manager when Hamilton Academical Women&apos;s won SWPL 2 in 2024/25. Coached at Arbroath FC, Arbroath FC Women, 360TFT. 15 years coaching 1,000+ players age 1&ndash;70. The resources here are ones I built along the way, that I wish I&apos;d had when I first started.
         </p>
         <p className="text-[14px] text-[#999] leading-relaxed max-w-[720px] mt-6">
           Library of individual coaching resources lives at{" "}
