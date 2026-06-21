@@ -1,9 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useMemo } from "react";
 import type { Tweet } from "./load-tweets";
 
-const PAGE_SIZE = 30;
+const PAGE_SIZE = 24;
 
 interface TweetsClientProps {
   tweets: Tweet[];
@@ -11,7 +12,7 @@ interface TweetsClientProps {
 
 export function TweetsClient({ tweets }: TweetsClientProps) {
   const [query, setQuery] = useState("");
-  const [page, setPage] = useState(1);
+  const [shown, setShown] = useState(PAGE_SIZE);
 
   const filtered = useMemo(() => {
     if (!query.trim()) return tweets;
@@ -19,13 +20,13 @@ export function TweetsClient({ tweets }: TweetsClientProps) {
     return tweets.filter((t) => t.text.toLowerCase().includes(q));
   }, [tweets, query]);
 
-  const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
-  const visible = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
-
   function handleSearch(value: string) {
     setQuery(value);
-    setPage(1);
+    setShown(PAGE_SIZE);
   }
+
+  const visible = filtered.slice(0, shown);
+  const hasMore = shown < filtered.length;
 
   return (
     <div>
@@ -45,34 +46,26 @@ export function TweetsClient({ tweets }: TweetsClientProps) {
         )}
       </div>
 
-      {/* Tweet list */}
-      <div className="flex flex-col divide-y divide-[#1e2229]">
-        {visible.length === 0 ? (
-          <p className="text-[14px] text-[#555] py-8">No tweets match that search.</p>
-        ) : (
-          visible.map((tweet) => <TweetRow key={tweet.id} tweet={tweet} />)
-        )}
-      </div>
+      <p className="text-[12px] font-mono text-[#666] mb-6">{tweets.length} tweets</p>
 
-      {/* Pagination */}
-      {totalPages > 1 && (
-        <div className="mt-10 flex items-center gap-3">
+      {/* Grid */}
+      {visible.length === 0 ? (
+        <p className="text-[14px] text-[#555] py-8">No tweets match that search.</p>
+      ) : (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+          {visible.map((tweet) => (
+            <TweetCard key={tweet.id} tweet={tweet} />
+          ))}
+        </div>
+      )}
+
+      {hasMore && (
+        <div className="mt-10 flex justify-center">
           <button
-            onClick={() => setPage((p) => Math.max(1, p - 1))}
-            disabled={page === 1}
-            className="text-[13px] font-mono text-[#aaa] hover:text-[#f0f0f0] disabled:text-[#333] disabled:cursor-not-allowed transition-colors"
+            onClick={() => setShown((s) => s + PAGE_SIZE)}
+            className="text-[13px] font-mono text-[#888] hover:text-[#E5A11C] border border-[#1e2229] hover:border-[#E5A11C] px-6 py-2.5 rounded-lg transition-colors"
           >
-            ← Prev
-          </button>
-          <span className="text-[12px] font-mono text-[#555]">
-            {page} / {totalPages}
-          </span>
-          <button
-            onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
-            disabled={page === totalPages}
-            className="text-[13px] font-mono text-[#aaa] hover:text-[#f0f0f0] disabled:text-[#333] disabled:cursor-not-allowed transition-colors"
-          >
-            Next →
+            Load more ({filtered.length - shown} remaining)
           </button>
         </div>
       )}
@@ -80,38 +73,42 @@ export function TweetsClient({ tweets }: TweetsClientProps) {
   );
 }
 
-function TweetRow({ tweet }: { tweet: Tweet }) {
-  const [expanded, setExpanded] = useState(false);
-
-  const isLong = tweet.text.length > 280;
-  const preview = isLong && !expanded ? tweet.text.slice(0, 280).trimEnd() + "…" : tweet.text;
+function TweetCard({ tweet }: { tweet: Tweet }) {
+  const isLong = tweet.text.length > 240;
+  const preview = isLong ? tweet.text.slice(0, 240).trimEnd() + "…" : tweet.text;
 
   return (
-    <div className="py-5">
-      <a
-        href={tweet.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="block group"
-      >
-        <p className="text-[16px] text-[#ddd] leading-relaxed whitespace-pre-wrap break-words group-hover:text-[#f0f0f0] transition-colors">
-          {preview}
-        </p>
-      </a>
-      <div className="mt-2 flex items-center gap-4">
-        {isLong && (
-          <button
-            onClick={() => setExpanded((e) => !e)}
-            className="text-[12px] font-mono text-[#666] hover:text-[#E5A11C] transition-colors"
-          >
-            {expanded ? "Show less" : "Show more"}
-          </button>
-        )}
-        <div className="flex items-center gap-3 text-[12px] font-mono text-[#666]">
-          {tweet.date && <span>{tweet.date}</span>}
-          {tweet.likes > 0 && <span>{tweet.likes} ♥</span>}
+    <a
+      href={tweet.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group flex flex-col gap-3 bg-[#0d1014] border border-[#1e2229] rounded-xl p-5 hover:border-[#E5A11C] transition-colors"
+    >
+      {/* Author row */}
+      <div className="flex items-center gap-2.5">
+        <Image
+          src="/images/kevin-profile.png"
+          alt="Kevin Middleton"
+          width={32}
+          height={32}
+          className="rounded-full object-cover shrink-0"
+        />
+        <div className="flex flex-col min-w-0">
+          <span className="text-[13px] font-semibold text-[#f0f0f0] leading-tight">Kevin Middleton</span>
+          <span className="text-[11px] font-mono text-[#555] leading-tight">@coach_kevin_m</span>
         </div>
       </div>
-    </div>
+
+      {/* Tweet text */}
+      <p className="text-[14px] text-[#ddd] leading-relaxed whitespace-pre-wrap break-words flex-1 group-hover:text-[#f0f0f0] transition-colors">
+        {preview}
+      </p>
+
+      {/* Meta */}
+      <div className="flex items-center gap-3 text-[11px] font-mono text-[#555]">
+        {tweet.date && <span>{tweet.date}</span>}
+        {tweet.likes > 0 && <span>{tweet.likes} ♥</span>}
+      </div>
+    </a>
   );
 }
