@@ -12,16 +12,24 @@ interface TweetsClientProps {
 
 export function TweetsClient({ tweets }: TweetsClientProps) {
   const [query, setQuery] = useState("");
+  const [sort, setSort] = useState<"recent" | "likes">("likes");
   const [shown, setShown] = useState(PAGE_SIZE);
 
   const filtered = useMemo(() => {
-    if (!query.trim()) return tweets;
-    const q = query.toLowerCase();
-    return tweets.filter((t) => t.text.toLowerCase().includes(q));
-  }, [tweets, query]);
+    const base = query.trim()
+      ? tweets.filter((t) => t.text.toLowerCase().includes(query.toLowerCase()))
+      : [...tweets];
+    if (sort === "likes") base.sort((a, b) => b.likes - a.likes);
+    return base;
+  }, [tweets, query, sort]);
 
   function handleSearch(value: string) {
     setQuery(value);
+    setShown(PAGE_SIZE);
+  }
+
+  function handleSort(value: "recent" | "likes") {
+    setSort(value);
     setShown(PAGE_SIZE);
   }
 
@@ -30,17 +38,32 @@ export function TweetsClient({ tweets }: TweetsClientProps) {
 
   return (
     <div>
-      {/* Search */}
-      <div className="mb-8">
+      {/* Search + Sort */}
+      <div className="mb-8 flex flex-wrap items-center gap-3">
         <input
           type="search"
           placeholder="Search tweets..."
           value={query}
           onChange={(e) => handleSearch(e.target.value)}
-          className="w-full max-w-[480px] bg-[#111418] border border-[#1e2229] rounded-lg px-4 py-2.5 text-[14px] text-[#f0f0f0] placeholder:text-[#555] focus:outline-none focus:border-[#E5A11C] transition-colors"
+          className="w-full max-w-[360px] bg-[#111418] border border-[#1e2229] rounded-lg px-4 py-2.5 text-[14px] text-[#f0f0f0] placeholder:text-[#555] focus:outline-none focus:border-[#E5A11C] transition-colors"
         />
+        <div className="flex items-center gap-1 border border-[#1e2229] rounded-lg overflow-hidden">
+          {(["likes", "recent"] as const).map((opt) => (
+            <button
+              key={opt}
+              onClick={() => handleSort(opt)}
+              className={`px-3 py-2 text-[12px] font-mono transition-colors ${
+                sort === opt
+                  ? "bg-[#E5A11C] text-[#0a0c0f]"
+                  : "text-[#666] hover:text-[#f0f0f0]"
+              }`}
+            >
+              {opt === "likes" ? "Most liked" : "Recent"}
+            </button>
+          ))}
+        </div>
         {query && (
-          <p className="mt-2 text-[12px] font-mono text-[#555]">
+          <p className="text-[12px] font-mono text-[#555]">
             {filtered.length} result{filtered.length !== 1 ? "s" : ""}
           </p>
         )}
