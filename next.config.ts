@@ -2,6 +2,11 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "standalone",
+  images: {
+    remotePatterns: [
+      { protocol: "https", hostname: "img.youtube.com" },
+    ],
+  },
   async redirects() {
     return [
       { source: "/about", destination: "/", permanent: true },
