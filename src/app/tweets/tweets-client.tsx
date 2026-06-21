@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useMemo } from "react";
 import type { Tweet } from "./load-tweets";
 
@@ -87,29 +88,40 @@ function TweetRow({ tweet }: { tweet: Tweet }) {
   const preview = isLong && !expanded ? tweet.text.slice(0, 280).trimEnd() + "…" : tweet.text;
 
   return (
-    <div className="py-5">
-      <a
-        href={tweet.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="block group"
-      >
-        <p className="text-[16px] text-[#ddd] leading-relaxed whitespace-pre-wrap break-words group-hover:text-[#f0f0f0] transition-colors">
-          {preview}
-        </p>
-      </a>
-      <div className="mt-2 flex items-center gap-4">
-        {isLong && (
-          <button
-            onClick={() => setExpanded((e) => !e)}
-            className="text-[12px] font-mono text-[#666] hover:text-[#E5A11C] transition-colors"
-          >
-            {expanded ? "Show less" : "Show more"}
-          </button>
-        )}
-        <div className="flex items-center gap-3 text-[12px] font-mono text-[#666]">
-          {tweet.date && <span>{tweet.date}</span>}
-          {tweet.likes > 0 && <span>{tweet.likes} ♥</span>}
+    <div className="py-5 flex gap-4">
+      <div className="shrink-0 pt-0.5">
+        <Image
+          src="/images/kevin-profile.png"
+          alt="Kevin Middleton"
+          width={36}
+          height={36}
+          className="rounded-full object-cover"
+        />
+      </div>
+      <div className="flex-1 min-w-0">
+        <a
+          href={tweet.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block group"
+        >
+          <p className="text-[16px] text-[#ddd] leading-relaxed whitespace-pre-wrap break-words group-hover:text-[#f0f0f0] transition-colors">
+            {preview}
+          </p>
+        </a>
+        <div className="mt-2 flex items-center gap-4">
+          {isLong && (
+            <button
+              onClick={() => setExpanded((e) => !e)}
+              className="text-[12px] font-mono text-[#666] hover:text-[#E5A11C] transition-colors"
+            >
+              {expanded ? "Show less" : "Show more"}
+            </button>
+          )}
+          <div className="flex items-center gap-3 text-[12px] font-mono text-[#666]">
+            {tweet.date && <span>{tweet.date}</span>}
+            {tweet.likes > 0 && <span>{tweet.likes} ♥</span>}
+          </div>
         </div>
       </div>
     </div>
