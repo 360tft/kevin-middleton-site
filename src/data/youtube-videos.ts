@@ -1,5 +1,5 @@
 // Auto-generated from YouTube Data API v3 — do not edit by hand.
-// Regenerate: node /tmp/gen-youtube-videos.mjs
+// Regenerate: node scripts/gen-youtube-videos.mjs (or wait for the weekly cron)
 
 export interface YouTubeVideo {
   id: string;
@@ -415,7 +415,7 @@ export const youtubeVideos: YouTubeVideo[] = [
   {"id":"60zQOzFq12M","title":"Respect GOATS #football #messi #ronaldo  #shorts","publishedAt":"2023-11-01","views":458,"channel":"360TFT"},
   {"id":"4THpNbNBmyE","title":"Rare skills 2023 #football #reels #footballtraining","publishedAt":"2023-11-01","views":470,"channel":"360TFT"},
   {"id":"uJouH-kZsEA","title":"The Reporter 200iq 😂 😱🧠😳 #football #alnasrr #realfootball @FunnyBrothersShow","publishedAt":"2023-11-01","views":27,"channel":"360TFT"},
-  {"id":"Qv4Jj-zFBL8","title":"Longest Knee Slide Goal Celebration Ever #football #skills #goals2023","publishedAt":"2023-10-31","views":23065,"channel":"360TFT"},
+  {"id":"Qv4Jj-zFBL8","title":"Longest Knee Slide Goal Celebration Ever #football #skills #goals2023","publishedAt":"2023-10-31","views":23063,"channel":"360TFT"},
   {"id":"3ra2kVcdKcI","title":"MOST BEAUTIFUL MOMENTS OF RESPECT ! #shorts","publishedAt":"2023-10-30","views":2,"channel":"360TFT"},
   {"id":"FRHLl4WCdoE","title":"0% Luck, 999% Ball Control 🔥  #skills #football #realfootball","publishedAt":"2023-10-30","views":14,"channel":"360TFT"},
   {"id":"2aXiyXS_R-o","title":"Revenge Moments in Football 😈 #Messi #alienrevengefootball","publishedAt":"2023-10-30","views":199,"channel":"360TFT"},
@@ -573,7 +573,7 @@ export const youtubeVideos: YouTubeVideo[] = [
   {"id":"9MT2SuPgkmY","title":"How good are 4 goal football training games?⚽🎯 #soccer #football #footballtraining #trainingsessions","publishedAt":"2023-02-21","views":1125,"channel":"360TFT"},
   {"id":"QXX1oP1kEW4","title":"Phil Foden:  The Professional Version of a Street Footballer.  Click \"Created from @360TFT\" for more","publishedAt":"2023-02-21","views":1991,"channel":"360TFT"},
   {"id":"7SzFpTRkYHU","title":"How's your touch?  Great little game to play with players #soccer #football","publishedAt":"2023-02-20","views":1235,"channel":"360TFT"},
-  {"id":"i2h-VECtOL4","title":"Goalkeeper Split Save 👐 #soccer #football #whatasave #save","publishedAt":"2023-02-19","views":3642,"channel":"360TFT"},
+  {"id":"i2h-VECtOL4","title":"Goalkeeper Split Save 👐 #soccer #football #whatasave #save","publishedAt":"2023-02-19","views":3643,"channel":"360TFT"},
   {"id":"CELxg1u2Uw8","title":"Phil Foden:  The Professional Version of a Street Footballer","publishedAt":"2023-02-19","views":580,"channel":"360TFT"},
   {"id":"2gMFxeZ6OkU","title":"When the first 17 seconds of training is like this, you know it is going to be a good session","publishedAt":"2023-02-19","views":9,"channel":"360TFT"},
   {"id":"FcbTKGDhD44","title":"Who Else Could Watch Ronaldinho Videos All Day?  #soccer #football #ronaldinho","publishedAt":"2023-02-18","views":19,"channel":"360TFT"},
