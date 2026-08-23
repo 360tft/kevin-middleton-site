@@ -22,7 +22,7 @@ export function CredentialsList() {
               <span className="text-[15px] md:text-[16px] text-[#e0e0e0] font-medium flex-1 min-w-0">
                 {c.name}
               </span>
-              <span className="text-[13px] text-[#999] hidden md:inline text-right">
+              <span className="text-[13px] text-[#999] hidden md:inline text-right max-w-[45%] whitespace-normal">
                 {c.metric}
               </span>
               {c.url ? (
@@ -54,12 +54,12 @@ export function CredentialsList() {
                   href={c.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center gap-4 py-4 px-2"
+                  className="group flex items-start gap-4 py-4 px-2"
                 >
                   {content}
                 </a>
               ) : (
-                <div className="flex items-center gap-4 py-4 px-2">{content}</div>
+                <div className="flex items-start gap-4 py-4 px-2">{content}</div>
               )}
               {mobileMetric}
             </li>
