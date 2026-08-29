@@ -8,6 +8,7 @@ const COMMUNITIES = [
 ];
 
 const RESOURCES = [
+  { label: "Projects by Kevin Middleton", href: "/projects" },
   { label: "The Coach System (premium.360tft.com)", href: "https://premium.360tft.com" },
   { label: "Full library (360tft.com)", href: "https://360tft.com" },
   { label: "Book on Amazon", href: "https://www.amazon.co.uk/dp/B0GF9VSGKG" },
@@ -72,18 +73,21 @@ function FooterColumn({
         {title}
       </p>
       <ul className="flex flex-col gap-2">
-        {items.map((item) => (
-          <li key={item.label}>
-            <a
-              href={item.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[13px] text-[#aaa] hover:text-[#E5A11C] transition-colors"
-            >
-              {item.label}
-            </a>
-          </li>
-        ))}
+        {items.map((item) => {
+          const external = item.href.startsWith("http");
+          return (
+            <li key={item.label}>
+              <a
+                href={item.href}
+                target={external ? "_blank" : undefined}
+                rel={external ? "noopener noreferrer" : undefined}
+                className="text-[13px] text-[#aaa] hover:text-[#E5A11C] transition-colors"
+              >
+                {item.label}
+              </a>
+            </li>
+          );
+        })}
       </ul>
     </div>
   );

@@ -1,0 +1,412 @@
+<!doctype html>
+<!--
+  Committed Paper export — /projects design states.
+
+  Paper canvas: https://app.paper.design/file/01M17TB8V5P1EF9PMPJ1073GEZ
+  Composed 2026-08-29 against the reference lock in ./REFERO-LOCK.md.
+  Artboard PNGs were exported to the Mac at ~/Downloads/ (Paper runs there,
+  not on the VPS). This file is the composition source for those artboards and
+  is the version-controlled record the implementation is traced against.
+
+  Every card uses a real, verified entry from src/data/projects.ts. No lorem.
+-->
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<title>/projects — approved Paper states</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#080a0d; --card:#0d1013; --card-dim:#0a0c0f; --nested:#0a0c0f;
+    --border:#1e2229; --border-dim:#191b1f; --tag-border:#24262b; --chip-border:#26282e;
+    --hair:#1a1d22; --hair-dim:#17191d;
+    --fg:#f0f0f0; --fg-2:#c8c8c8; --muted:#9a9a9a; --muted-2:#8b8b8b; --muted-3:#7d7d7d;
+    --label:#6c6c6c; --label-2:#5c5c5c; --ghost:#3f4247;
+    --gold:#E5A11C; --gold-dim:#4a3a14; --gold-tag:#3a3320; --gold-fill:#1c1608;
+    --mark:#14171b; --mark-fg:#4a4d52; --pill:#1a1d22;
+    --sans:Inter,system-ui,sans-serif; --mono:'JetBrains Mono',ui-monospace,monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#151719;font-family:var(--sans);color:var(--fg);padding:40px;display:flex;flex-direction:column;gap:56px}
+  .state-label{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#7a7d82}
+  .board{background:var(--bg);display:flex;flex-direction:column}
+  .desktop{width:1440px;padding:56px 120px}
+  .mobile{width:390px;padding:40px 0}
+  .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#666}
+  h1{font-size:56px;font-weight:700;letter-spacing:-.03em;line-height:60px;margin:0}
+  .intro{font-size:18px;line-height:29px;color:var(--muted);max-width:760px}
+  .counts{display:flex;gap:56px;padding:44px 0 32px;border-bottom:1px solid var(--border)}
+  .count b{display:block;font-family:var(--mono);font-size:30px;font-weight:500;letter-spacing:-.02em}
+  .count span{display:block;margin-top:6px;font-family:var(--mono);font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--label)}
+  .facet{display:flex;align-items:center;gap:14px}
+  .facet > .k{font-family:var(--mono);font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--label);width:78px;flex-shrink:0}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .chip{height:30px;padding:0 14px;display:flex;align-items:center;gap:8px;border:1px solid var(--chip-border);border-radius:9999px;font-size:13px;color:var(--fg-2)}
+  .chip.on{border-color:var(--gold);background:var(--gold-fill);color:var(--gold);font-weight:500;padding-right:11px}
+  .chip.ghost{border-color:transparent;color:var(--muted-3)}
+  .search{width:420px;height:40px;display:flex;align-items:center;gap:12px;padding:0 16px;border:1px solid var(--chip-border);border-radius:9999px;background:#0d1013;font-size:14px;color:var(--label)}
+  .search.on{border-color:var(--gold);color:var(--fg)}
+  .bar{display:flex;flex-direction:column;gap:16px;padding:28px 0;border-bottom:1px solid var(--border)}
+  .resulthead{display:flex;align-items:baseline;justify-content:space-between;padding:26px 0 18px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-3)}
+  .resulthead .clear{font-family:var(--sans);font-size:13px;letter-spacing:0;text-transform:none;color:var(--ghost)}
+  .grid{display:flex;flex-direction:column;gap:20px}
+  .row{display:flex;gap:20px;align-items:stretch}
+  .card{width:386px;display:flex;flex-direction:column;gap:14px;padding:20px;background:var(--card);border:1px solid var(--border);border-radius:8px}
+  .card.featured{border-color:var(--gold-dim)}
+  .card.quiet{background:var(--card-dim);border-color:var(--border-dim)}
+  .head{display:flex;align-items:center;gap:12px}
+  .head.tall{align-items:flex-start}
+  .mark{width:34px;height:34px;flex-shrink:0;border-radius:6px;background:var(--mark);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:14px;color:var(--mark-fg)}
+  .mark.brand{background:var(--pill);border-color:transparent;color:var(--gold);font-weight:500}
+  .mark.none{background:var(--nested);border:1px dashed var(--tag-border)}
+  .mark.none i{display:block;width:9px;height:1px;background:#3a3d42}
+  .name{flex-grow:1;font-size:17px;font-weight:600;letter-spacing:-.01em;line-height:23px}
+  .quiet .name,.quiet .mark{color:#a9a9a9}
+  .status{flex-shrink:0;height:22px;padding:0 9px;display:flex;align-items:center;border-radius:9999px;background:var(--pill);font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg-2)}
+  .status.off{background:none;border:1px solid #2a2d33;color:var(--muted-3)}
+  .summary{font-size:14px;line-height:22px;color:var(--muted)}
+  .quiet .summary{color:#767676}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;flex-grow:1;align-content:flex-start}
+  .tag{height:21px;padding:0 8px;display:flex;align-items:center;border:1px solid var(--tag-border);border-radius:4px;font-size:11px;color:var(--muted-2)}
+  .tag.free{border-color:var(--gold-tag);color:var(--gold)}
+  .quiet .tag{border-color:#1e2024;color:#6a6a6a}
+  .foot{display:flex;align-items:center;justify-content:space-between;padding-top:14px;border-top:1px solid var(--hair)}
+  .quiet .foot{border-top-color:var(--hair-dim)}
+  .rel{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--label-2)}
+  .quiet .rel{color:#494949}
+  .go{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:500;color:var(--gold)}
+  .quiet .go{color:var(--muted-2)}
+  .family{display:flex;flex-direction:column;gap:7px;padding:11px;background:var(--nested);border:1px solid var(--hair-dim);border-radius:6px}
+  .family .k{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--label-2)}
+  .family .child{font-size:12.5px;color:#a8a8a8;display:flex;align-items:center;gap:8px}
+  .family .child i{display:block;width:3px;height:14px;flex-shrink:0;border-radius:2px;background:var(--border)}
+  .family .child.hit{color:var(--fg)}
+  .family .child.hit i{background:var(--gold)}
+  .family .child.miss{color:#6a6a6a}
+  .note{display:flex;align-items:center;gap:10px;padding:14px;border:1px solid var(--hair);border-radius:6px;background:#0b0d10;font-size:13px;color:var(--muted-2)}
+  .note i{display:block;width:3px;height:16px;flex-shrink:0;border-radius:2px;background:var(--gold)}
+  .empty{display:flex;flex-direction:column;align-items:flex-start;gap:16px;padding:64px 0;max-width:560px}
+  .empty h2{margin:0;font-size:26px;font-weight:600;letter-spacing:-.02em;line-height:34px}
+  .empty p{margin:0;font-size:15px;line-height:25px;color:var(--muted-2)}
+  .btn{height:36px;padding:0 16px;display:flex;align-items:center;gap:8px;border-radius:9999px;font-size:13.5px}
+  .btn.primary{background:var(--gold);color:var(--bg);font-weight:600}
+  .btn.secondary{border:1px solid var(--chip-border);color:var(--fg-2)}
+  .btn.secondary b{color:var(--fg)}
+  .url{font-family:var(--mono);font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--label-2)}
+  /* mobile */
+  .m-pad{padding-left:20px;padding-right:20px}
+  .mobile h1{font-size:32px;line-height:36px}
+  .mobile .intro{font-size:15px;line-height:24px}
+  .mobile .counts{gap:22px;padding:8px 0 0;border:0}
+  .mobile .count b{font-size:20px}
+  .mobile .count span{font-size:10px;letter-spacing:.12em}
+  .mobile .card{width:350px}
+  .stickybar{display:flex;align-items:center;gap:10px;padding:12px 20px;background:#0b0d10;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+  .stickybar .search{flex-grow:1;width:auto;height:36px;padding:0 13px;font-size:13.5px}
+  .stickybar .filterbtn{flex-shrink:0;height:36px;padding:0 14px;display:flex;align-items:center;gap:8px;border:1px solid var(--chip-border);border-radius:9999px;font-size:13.5px;font-weight:500}
+  .drawer{background:var(--card);border-top:1px solid var(--chip-border);border-radius:16px 16px 0 0;padding-bottom:20px}
+  .grabber{width:36px;height:4px;border-radius:999px;background:#2a2d33;margin:10px auto 6px}
+  .drawer h3{margin:0;font-size:16px;font-weight:600}
+  .drawer .chip{height:34px;font-size:13.5px}
+  .cta{height:46px;display:flex;align-items:center;justify-content:center;border-radius:9999px;background:var(--gold);color:var(--bg);font-size:14.5px;font-weight:600}
+  svg{flex-shrink:0}
+</style>
+</head>
+<body>
+
+<!-- ============================================ S1 desktop default -->
+<div class="state-label">S1 · Desktop 1440 · Default, unfiltered (all 51), featured and active first</div>
+<div class="board desktop">
+  <div class="eyebrow">Kevin Middleton · Coach educator and builder</div>
+  <h1 style="margin-top:18px">Projects by Kevin Middleton</h1>
+  <p class="intro" style="margin:18px 0 0">Everything I have built and published, in one place. Football coaching, AI, player development, refereeing, travel and the odd experiment. Filter it by who it is for, whether it is free or paid, and what state it is actually in.</p>
+
+  <div class="counts">
+    <div class="count"><b>51</b><span>Listed</span></div>
+    <div class="count"><b>48</b><span>Active</span></div>
+    <div class="count"><b style="color:var(--gold)">36</b><span>Free available</span></div>
+    <div class="count"><b>1</b><span>Paused or archived</span></div>
+  </div>
+
+  <div class="bar">
+    <div class="search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>Search name, summary or tag</div>
+    <div class="facet"><div class="k">Audience</div><div class="chips">
+      <div class="chip">Coach</div><div class="chip">Player</div><div class="chip">Referee</div><div class="chip">Football Manager</div>
+      <div class="chip ghost">More audiences <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></div>
+    </div></div>
+    <div class="facet"><div class="k">Access</div><div class="chips"><div class="chip">Free available</div><div class="chip">Paid</div></div></div>
+    <div class="facet"><div class="k">Type</div><div class="chips"><div class="chip">App</div><div class="chip">Resource</div><div class="chip">Course</div><div class="chip">Community</div><div class="chip">Book</div><div class="chip">Tool</div><div class="chip">Directory</div><div class="chip">Service</div><div class="chip">Experiment</div></div></div>
+    <div class="facet"><div class="k">Status</div><div class="chips"><div class="chip">Active</div><div class="chip">Beta</div><div class="chip">Experiment</div><div class="chip">Paused</div><div class="chip">Archived</div></div></div>
+  </div>
+
+  <div class="resulthead"><div>Showing all 51 · featured and active first</div><div class="clear">Clear filters</div></div>
+
+  <div class="grid">
+    <div class="row">
+      <div class="card featured">
+        <div class="head"><div class="mark brand">FG</div><div class="name">FootballGPT</div><div class="status">Active</div></div>
+        <div class="summary">Ask football coaching questions and get answers adapted to your players, your session and your match day.</div>
+        <div class="tags"><i class="tag">App</i><i class="tag">Coach</i><i class="tag">Player</i><i class="tag">Football Manager</i><i class="tag free">Free available</i><i class="tag">Paid</i></div>
+        <div class="foot"><div class="rel">Built by Kevin</div><div class="go">Try <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></div></div>
+      </div>
+      <div class="card featured">
+        <div class="head"><div class="mark">CC</div><div class="name">The Coach's Compass</div><div class="status">Active</div></div>
+        <div class="summary">Five minutes to find the coaching pattern that is actually costing you, and one thing to change.</div>
+        <div class="tags"><i class="tag">Tool</i><i class="tag">Coach</i><i class="tag free">Free available</i></div>
+        <div class="foot"><div class="rel">Published by Kevin</div><div class="go">Try <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></div></div>
+      </div>
+      <div class="card featured">
+        <div class="head"><div class="mark">FC</div><div class="name">Football Coaching Academy</div><div class="status">Active</div></div>
+        <div class="summary">The coaching community and classroom: work through your biggest coaching problems with other coaches.</div>
+        <div class="tags"><i class="tag">Community</i><i class="tag">Coach</i><i class="tag">Paid</i></div>
+        <div class="foot"><div class="rel">Community by Kevin</div><div class="go">Join <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></div></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card">
+        <div class="head"><div class="mark">ET</div><div class="name">Editable Tactics Boards</div><div class="status">Active</div></div>
+        <div class="summary">Editable boards for 7, 9 and 11-a-side, plus a general one, free to download and mark up.</div>
+        <div class="family"><div class="k">3 in this family</div><div class="child"><i></i>7-a-side board</div><div class="child"><i></i>9-a-side board</div><div class="child"><i></i>11-a-side board</div></div>
+        <div class="tags"><i class="tag">Tool</i><i class="tag">Coach</i><i class="tag free">Free available</i></div>
+        <div class="foot"><div class="rel">Published by Kevin</div><div class="go">Try <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></div></div>
+      </div>
+      <div class="card quiet">
+        <div class="head"><div class="mark">AC</div><div class="name">AI Coaching Mastery</div><div class="status off">Paused</div></div>
+        <div class="summary" style="flex-grow:1">The twelve-week programme with live calls. Enrolment is closed and there is no open date to give you.</div>
+        <div class="tags" style="flex-grow:0"><i class="tag">Course</i><i class="tag">Coach</i><i class="tag">Paid</i></div>
+        <div class="foot"><div class="rel">Built by Kevin</div><div class="go">Read about it <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></div></div>
+      </div>
+      <div class="card quiet">
+        <div class="head"><div class="mark">Fi</div><div class="name">FitGPT</div><div class="status off">Experiment</div></div>
+        <div class="summary" style="flex-grow:1">An early build exploring personalised fitness coaching on mobile. Public, but still finding its shape.</div>
+        <div class="tags" style="flex-grow:0"><i class="tag">App</i><i class="tag">General</i><i class="tag">Free available</i></div>
+        <div class="foot"><div class="rel">Built by Kevin</div><div class="go">Visit <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></div></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card">
+        <div class="head tall"><div class="mark">RD</div><div class="name">The Rise of the Dogmatic Football Coach</div><div class="status">Active</div></div>
+        <div class="summary" style="flex-grow:1">Why coaching keeps hardening into method, and what it costs the players in front of you.</div>
+        <div class="tags" style="flex-grow:0"><i class="tag">Book</i><i class="tag">Coach</i><i class="tag">Paid</i></div>
+        <div class="foot"><div class="rel">Written by Kevin</div><div class="go">Read <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></div></div>
+      </div>
+      <div class="card">
+        <div class="head"><div class="mark none"><i></i></div><div class="name">The FM Wonderkid Scouting Guide</div><div class="status">Active</div></div>
+        <div class="summary" style="flex-grow:1">Finding the players worth signing in Football Manager, and the ones that never come good.</div>
+        <div class="tags" style="flex-grow:0"><i class="tag">Resource</i><i class="tag">Football Manager</i><i class="tag free">Free available</i></div>
+        <div class="foot"><div class="rel">Published by Kevin</div><div class="go">Visit <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></div></div>
+      </div>
+      <div class="card">
+        <div class="head"><div class="mark">CG</div><div class="name">CruiseGPT</div><div class="status">Beta</div></div>
+        <div class="summary" style="flex-grow:1">Compare sailings and work through the questions that come up when you are planning a cruise.</div>
+        <div class="tags" style="flex-grow:0"><i class="tag">App</i><i class="tag">Cruiser / traveller</i><i class="tag free">Free available</i><i class="tag">Paid</i></div>
+        <div class="foot"><div class="rel">Built by Kevin</div><div class="go">Try <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================ S2 desktop filtered -->
+<div class="state-label">S2 · Desktop 1440 · Coach + Free available applied, mixed-access entry retained</div>
+<div class="board desktop">
+  <div class="bar" style="padding-top:0">
+    <div class="url">/projects?audience=coach&amp;access=free</div>
+    <div class="facet"><div class="k">Audience</div><div class="chips">
+      <div class="chip on">Coach <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 6l12 12M18 6L6 18"/></svg></div>
+      <div class="chip">Player</div><div class="chip">Referee</div><div class="chip">Football Manager</div>
+      <div class="chip ghost">More audiences <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></div>
+    </div></div>
+    <div class="facet"><div class="k">Access</div><div class="chips">
+      <div class="chip on">Free available <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 6l12 12M18 6L6 18"/></svg></div>
+      <div class="chip">Paid</div>
+    </div></div>
+  </div>
+  <div class="resulthead" style="padding-top:22px"><div><span style="color:var(--fg)">27 results</span> <span style="color:var(--label-2)">· 2 filters applied</span></div><div class="chip" style="height:28px">Clear filters</div></div>
+  <div class="grid">
+    <div class="row">
+      <div class="card featured">
+        <div class="head"><div class="mark brand">FG</div><div class="name">FootballGPT</div><div class="status">Active</div></div>
+        <div class="summary">Ask football coaching questions and get answers adapted to your players, your session and your match day.</div>
+        <div class="tags"><i class="tag">App</i><i class="tag">Coach</i><i class="tag">Player</i><i class="tag">Football Manager</i><i class="tag free">Free available</i><i class="tag">Paid</i></div>
+        <div class="foot"><div class="rel">Built by Kevin</div><div class="go">Try <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></div></div>
+      </div>
+      <div class="card featured">
+        <div class="head"><div class="mark">CC</div><div class="name">The Coach's Compass</div><div class="status">Active</div></div>
+        <div class="summary">Five minutes to find the coaching pattern that is actually costing you, and one thing to change.</div>
+        <div class="tags"><i class="tag">Tool</i><i class="tag">Coach</i><i class="tag free">Free available</i></div>
+        <div class="foot"><div class="rel">Published by Kevin</div><div class="go">Try <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></div></div>
+      </div>
+      <div class="card">
+        <div class="head"><div class="mark">ET</div><div class="name">Editable Tactics Boards</div><div class="status">Active</div></div>
+        <div class="summary">Editable boards for 7, 9 and 11-a-side, plus a general one, free to download and mark up.</div>
+        <div class="family"><div class="k">3 in this family</div><div class="child"><i></i>7-a-side board</div><div class="child"><i></i>9-a-side board</div><div class="child"><i></i>11-a-side board</div></div>
+        <div class="tags"><i class="tag">Tool</i><i class="tag">Coach</i><i class="tag free">Free available</i></div>
+        <div class="foot"><div class="rel">Published by Kevin</div><div class="go">Try <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></div></div>
+      </div>
+    </div>
+    <div class="note"><i></i>FootballGPT has a paid tier as well, and it still appears here. Free available and Paid are independent facets, so nothing freemium gets hidden by asking for the free things.</div>
+  </div>
+</div>
+
+<!-- ============================================ S3 desktop no results -->
+<div class="state-label">S3 · Desktop 1440 · No results, with named recovery</div>
+<div class="board desktop">
+  <div class="facet" style="padding-bottom:22px;border-bottom:1px solid var(--border)">
+    <div class="k">Applied</div>
+    <div class="chips">
+      <div class="chip on">Referee <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 6l12 12M18 6L6 18"/></svg></div>
+      <div class="chip on">Book <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 6l12 12M18 6L6 18"/></svg></div>
+      <div class="chip on">Paid <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 6l12 12M18 6L6 18"/></svg></div>
+    </div>
+  </div>
+  <div class="empty">
+    <div style="font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase">0 results</div>
+    <h2>I have not written a referee book.</h2>
+    <p>Nothing in the portfolio matches all three of those at once. Drop one filter and something will. The referee work is a free cheat sheet and an app, not a book.</p>
+    <div style="display:flex;gap:10px;padding-top:6px">
+      <div class="btn primary">Clear all filters</div>
+      <div class="btn secondary">Remove <b>Book</b></div>
+      <div class="btn secondary">Remove <b>Paid</b></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================ S4 mobile default -->
+<div class="state-label">S4 · Mobile 390 · Default, sticky compact filter bar</div>
+<div class="board mobile">
+  <div class="m-pad" style="display:flex;flex-direction:column;gap:12px;padding-bottom:20px">
+    <div class="eyebrow" style="font-size:10px">Kevin Middleton · Coach educator and builder</div>
+    <h1>Projects by Kevin Middleton</h1>
+    <p class="intro" style="margin:0">Everything I have built and published, in one place. Filter it by who it is for, whether it is free or paid, and what state it is in.</p>
+    <div class="counts">
+      <div class="count"><b>51</b><span>Listed</span></div>
+      <div class="count"><b>48</b><span>Active</span></div>
+      <div class="count"><b style="color:var(--gold)">36</b><span>Free</span></div>
+      <div class="count"><b>1</b><span>Paused</span></div>
+    </div>
+  </div>
+  <div class="stickybar">
+    <div class="search"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>Search</div>
+    <div class="filterbtn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--fg-2)" stroke-width="2"><path d="M3 6h18M6 12h12M10 18h4"/></svg>Filter</div>
+  </div>
+  <div class="m-pad" style="display:flex;justify-content:space-between;align-items:center;padding-top:18px;padding-bottom:14px">
+    <div style="font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-3)">Showing all 51</div>
+    <div style="font-size:12.5px;color:var(--ghost)">Clear</div>
+  </div>
+  <div class="m-pad" style="display:flex;flex-direction:column;gap:12px">
+    <div class="card featured">
+      <div class="head"><div class="mark brand">FG</div><div class="name">FootballGPT</div><div class="status">Active</div></div>
+      <div class="summary">Ask football coaching questions and get answers adapted to your players, your session and your match day.</div>
+      <div class="tags"><i class="tag">App</i><i class="tag">Coach</i><i class="tag">Player</i><i class="tag">Football Manager</i><i class="tag free">Free available</i><i class="tag">Paid</i></div>
+      <div class="foot"><div class="rel">Built by Kevin</div><div class="go">Try <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></div></div>
+    </div>
+    <div class="card featured">
+      <div class="head"><div class="mark">FC</div><div class="name">Football Coaching Academy</div><div class="status">Active</div></div>
+      <div class="summary">The coaching community and classroom: work through your biggest coaching problems with other coaches.</div>
+      <div class="tags"><i class="tag">Community</i><i class="tag">Coach</i><i class="tag">Paid</i></div>
+      <div class="foot"><div class="rel">Community by Kevin</div><div class="go">Join <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></div></div>
+    </div>
+    <div class="card quiet">
+      <div class="head"><div class="mark">AC</div><div class="name">AI Coaching Mastery</div><div class="status off">Paused</div></div>
+      <div class="summary" style="flex-grow:1">The twelve-week programme with live calls. Enrolment is closed and there is no open date to give you.</div>
+      <div class="tags" style="flex-grow:0"><i class="tag">Course</i><i class="tag">Coach</i><i class="tag">Paid</i></div>
+      <div class="foot"><div class="rel">Built by Kevin</div><div class="go">Read about it <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================ S5 mobile drawer -->
+<div class="state-label">S5 · Mobile 390 · Filter drawer open, More audiences expanded, 3 facets applied</div>
+<div class="board mobile" style="padding:0;background:#08090b">
+  <div style="height:96px;display:flex;align-items:flex-end;padding:0 20px 16px">
+    <div style="font-family:var(--mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:#33363b">Page dimmed behind the drawer</div>
+  </div>
+  <div class="drawer">
+    <div class="grabber"></div>
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 20px 14px;border-bottom:1px solid var(--hair)">
+      <h3>Filter</h3><div style="font-size:13px;color:var(--gold)">Clear all (3)</div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px;padding:18px 20px 0">
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div class="k" style="font-family:var(--mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--label)">Audience</div>
+        <div class="chips"><div class="chip on">Coach</div><div class="chip">Player</div><div class="chip">Referee</div><div class="chip">Football Manager</div></div>
+        <div style="display:flex;flex-direction:column;gap:10px;padding-top:6px">
+          <div style="display:flex;align-items:center;gap:7px;font-size:13px;color:var(--muted-3)">More audiences <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg></div>
+          <div class="chips"><div class="chip">Club / organisation</div><div class="chip on">Cruiser / traveller</div><div class="chip">Couple / personal</div><div class="chip">Builder / creator</div><div class="chip">General</div></div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div style="font-family:var(--mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--label)">Access</div>
+        <div class="chips"><div class="chip on">Free available</div><div class="chip">Paid</div></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div style="font-family:var(--mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--label)">Status</div>
+        <div class="chips"><div class="chip">Active</div><div class="chip">Beta</div><div class="chip">Experiment</div><div class="chip">Paused</div><div class="chip">Archived</div></div>
+      </div>
+      <div class="cta">Show 12 results</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================ S6 mobile search family -->
+<div class="state-label">S6 · Mobile 390 · Search "9-a-side" matches a resource-family child</div>
+<div class="board mobile">
+  <div class="m-pad" style="display:flex;gap:10px;padding-bottom:14px">
+    <div class="search on" style="flex-grow:1;width:auto;height:36px;padding:0 13px;font-size:13.5px">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+      <span style="flex-grow:1">9-a-side</span>
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--muted-3)" stroke-width="2.5"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </div>
+    <div class="filterbtn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--fg-2)" stroke-width="2"><path d="M3 6h18M6 12h12M10 18h4"/></svg>Filter</div>
+  </div>
+  <div class="m-pad" style="padding-bottom:14px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase">1 result</div>
+  <div class="m-pad">
+    <div class="card">
+      <div class="head"><div class="mark">ET</div><div class="name">Editable Tactics Boards</div><div class="status">Active</div></div>
+      <div class="summary">Editable boards for 7, 9 and 11-a-side, plus a general one, free to download and mark up.</div>
+      <div class="family" style="padding:12px;gap:8px">
+        <div class="k">Matched in this family</div>
+        <div class="child hit"><i></i>9-a-side board</div>
+        <div class="child miss"><i></i>7-a-side board</div>
+        <div class="child miss"><i></i>11-a-side board</div>
+      </div>
+      <div class="tags" style="flex-grow:0"><i class="tag">Tool</i><i class="tag">Coach</i><i class="tag free">Free available</i></div>
+      <div class="foot"><div class="rel">Published by Kevin</div><div class="go">Get the 9-a-side board <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================ S7 mobile player+paid -->
+<div class="state-label">S7 · Mobile 390 · Player + Paid, applied chips and shareable URL</div>
+<div class="board mobile">
+  <div class="m-pad" style="display:flex;flex-direction:column;gap:12px;padding-bottom:16px;border-bottom:1px solid var(--border)">
+    <div class="url" style="font-size:10px">/projects?audience=player&amp;access=paid</div>
+    <div class="chips">
+      <div class="chip on" style="height:32px">Player <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 6l12 12M18 6L6 18"/></svg></div>
+      <div class="chip on" style="height:32px">Paid <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 6l12 12M18 6L6 18"/></svg></div>
+      <div class="chip" style="height:32px">Clear</div>
+    </div>
+    <div style="font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase">2 results</div>
+  </div>
+  <div class="m-pad" style="display:flex;flex-direction:column;gap:12px;padding-top:16px">
+    <div class="card featured">
+      <div class="head"><div class="mark brand">FG</div><div class="name">FootballGPT</div><div class="status">Active</div></div>
+      <div class="summary">Ask football coaching questions and get answers adapted to your players, your session and your match day.</div>
+      <div class="tags"><i class="tag">App</i><i class="tag">Coach</i><i class="tag">Player</i><i class="tag">Football Manager</i><i class="tag free">Free available</i><i class="tag">Paid</i></div>
+      <div class="foot"><div class="rel">Built by Kevin</div><div class="go">Try <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></div></div>
+    </div>
+    <div class="card">
+      <div class="head"><div class="mark">PR</div><div class="name">PlayReflect</div><div class="status">Active</div></div>
+      <div class="summary">Record what happened in a session or a match, then learn from it. Built for players as well as coaches.</div>
+      <div class="tags"><i class="tag">App</i><i class="tag">Player</i><i class="tag">Paid</i></div>
+      <div class="foot"><div class="rel">Built by Kevin</div><div class="go">Try <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></div></div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
