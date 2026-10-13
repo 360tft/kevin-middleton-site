@@ -11,6 +11,12 @@ export function Nav() {
           Work
         </a>
         <a
+          href="/essays"
+          className="text-[13px] text-[#aaa] hover:text-[#f0f0f0] px-4 py-1.5 rounded-full transition-colors"
+        >
+          Writing
+        </a>
+        <a
           href="/tweets"
           className="text-[13px] text-[#aaa] hover:text-[#f0f0f0] px-4 py-1.5 rounded-full transition-colors"
         >
