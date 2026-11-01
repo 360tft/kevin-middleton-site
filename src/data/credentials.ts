@@ -9,7 +9,7 @@ export interface Credential {
 export const credentials: Credential[] = [
   {
     name: "UEFA Licensed coach",
-    metric: "Assistant manager when Hamilton Academical Women's won SWPL 2 in 2024/25. Coached at Arbroath FC, Arbroath FC Women, 360TFT. 15 years coaching 1,000+ players age 1-70.",
+    metric: "UEFA Licensed, coached since 2010, over 1,000 players, every level of the game, and apps used by over 25,000 coaches.",
   },
   {
     name: "FootballGPT",
