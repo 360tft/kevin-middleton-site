@@ -14,7 +14,7 @@ export default function Home() {
           <div className="shrink-0">
             <Image
               src="/images/kevin-trophy.jpg"
-              alt="Kevin Middleton holding the SWPL 2 trophy with Hamilton Academical Women's"
+              alt="Kevin Middleton, football coach"
               width={240}
               height={240}
               priority
