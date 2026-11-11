@@ -47,7 +47,7 @@ The gap is execution, not knowledge.
 
 This is not a comfortable finding for coaching education, including my own 15 years in it.
 
-The traditional model , badge by badge, module by module, is excellent at delivering knowledge. Coaches leave with better concepts. The best coaches leave and apply those concepts. Most coaches leave and face the gap: they know it, but applying it takes time and planning resource they do not have.
+The traditional model, badge by badge and module by module, is excellent at delivering knowledge. Coaches leave with better concepts. The best coaches leave and apply those concepts. Most coaches leave and face the gap: they know it, but applying it takes time and planning resource they do not have.
 
 AI does not replace that conceptual foundation. But it closes the execution gap in a way that no amount of CPD ever could.
 
