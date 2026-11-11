@@ -1,8 +1,8 @@
 export const SITE = {
   name: "Kevin Middleton",
-  title: "Kevin Middleton — UEFA-licensed coach. SWPL 2 winners 2024/25. Built 8 AI products for football.",
+  title: "Kevin Middleton: UEFA Licensed, coached since 2010, apps used by over 25,000 coaches.",
   description:
-    "Assistant manager when Hamilton Academical Women's won SWPL 2 in 2024/25. Built 8 AI products used by 10,000+ coaches. Get the free Small-Sided Games cheat sheet, or work with me 1-on-1.",
+    "UEFA Licensed, coached since 2010, coached over 1,000 players, worked at every level of the game, apps used by over 25,000 coaches. Get the free Small-Sided Games cheat sheet, or work with me 1-on-1.",
   url: "https://kevinmiddleton.360tft.com",
 } as const;
 
