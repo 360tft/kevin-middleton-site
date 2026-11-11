@@ -1,8 +1,8 @@
 export const SITE = {
   name: "Kevin Middleton",
-  title: "Kevin Middleton: UEFA Licensed, coached since 2010. Apps used by over 25,000 coaches.",
+  title: "Kevin Middleton: UEFA Licensed, coached since 2010, apps used by over 25,000 coaches.",
   description:
-    "UEFA Licensed, coached since 2010, over 1,000 players, every level of the game, and apps used by over 25,000 coaches. Get the free Small-Sided Games cheat sheet, or work with me 1-on-1.",
+    "UEFA Licensed, coached since 2010, coached over 1,000 players, worked at every level of the game, apps used by over 25,000 coaches. Get the free Small-Sided Games cheat sheet, or work with me 1-on-1.",
   url: "https://kevinmiddleton.360tft.com",
 } as const;
 

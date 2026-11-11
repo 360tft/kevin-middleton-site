@@ -9,11 +9,11 @@ export interface Credential {
 export const credentials: Credential[] = [
   {
     name: "UEFA Licensed coach",
-    metric: "UEFA Licensed, coached since 2010, over 1,000 players, every level of the game, and apps used by over 25,000 coaches.",
+    metric: "UEFA Licensed, coached since 2010, coached over 1,000 players, worked at every level of the game, apps used by over 25,000 coaches.",
   },
   {
     name: "FootballGPT",
-    metric: "8,000+ registered coaches, AI for coaching",
+    metric: "AI for coaching",
     url: "https://footballgpt.co",
   },
   {

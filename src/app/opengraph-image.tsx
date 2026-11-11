@@ -72,7 +72,7 @@ export default async function OGImage() {
               lineHeight: 1.4,
             }}
           >
-            10 live products. 10,000+ coaches. 40+ countries.
+            UEFA Licensed. Coached since 2010. Apps used by over 25,000 coaches.
           </span>
         </div>
       </div>
