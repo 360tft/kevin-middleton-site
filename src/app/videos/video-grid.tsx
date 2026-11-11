@@ -44,13 +44,6 @@ function VideoCard({ video }: { video: YouTubeVideo }) {
   const fallbackUrl = `https://img.youtube.com/vi/${video.id}/hqdefault.jpg`;
   const youtubeUrl = `https://www.youtube.com/watch?v=${video.id}`;
 
-  const formattedViews =
-    video.views != null
-      ? video.views >= 1000
-        ? `${(video.views / 1000).toFixed(1)}k views`
-        : `${video.views} views`
-      : null;
-
   const formattedDate = video.publishedAt
     ? new Date(video.publishedAt).toLocaleDateString("en-GB", {
         day: "numeric",
@@ -97,9 +90,9 @@ function VideoCard({ video }: { video: YouTubeVideo }) {
         <p className="text-[14px] font-medium text-[#f0f0f0] leading-snug group-hover:text-[#E5A11C] transition-colors line-clamp-2">
           {video.title}
         </p>
-        {(formattedDate || formattedViews) && (
+        {formattedDate && (
           <p className="text-[12px] font-mono text-[#555]">
-            {[formattedDate, formattedViews].filter(Boolean).join(" · ")}
+            {formattedDate}
           </p>
         )}
         {video.description && (
