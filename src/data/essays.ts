@@ -8,7 +8,7 @@ export interface Essay {
 
 export const essays: Essay[] = [
   {
-    slug: "what-10000-grassroots-coaches-actually-use-ai-for",
+    slug: "what-grassroots-coaches-actually-use-ai-for",
     title: "What grassroots coaches actually use AI for",
     date: "2026-06-24",
     excerpt:
@@ -45,7 +45,7 @@ The gap is execution, not knowledge.
 
 ---
 
-This is not a comfortable finding for coaching education, including my own 15 years in it.
+This is not a comfortable finding for coaching education, including the part I play in it.
 
 The traditional model, badge by badge and module by module, is excellent at delivering knowledge. Coaches leave with better concepts. The best coaches leave and apply those concepts. Most coaches leave and face the gap: they know it, but applying it takes time and planning resource they do not have.
 
@@ -57,7 +57,7 @@ The coach who knows their players need more ball mastery in transition zones, bu
 
 I am not making a marketing argument for FootballGPT here. The point is structural.
 
-Football coaching education has been solving for knowledge transfer for 40 years because that was the solvable problem. You can design a course. You can run a seminar. You cannot, historically, give every grassroots coach a planning partner who knows their team, their constraints, and their level.
+Football coaching education has been solving for knowledge transfer because that was the solvable problem. You can design a course. You can run a seminar. You cannot, historically, give every grassroots coach a planning partner who knows their team, their constraints, and their level.
 
 Now you can.
 

@@ -6,7 +6,7 @@ import { essays } from "@/data/essays";
 export const metadata: Metadata = {
   title: "Writing",
   description:
-    "Longform essays on AI in football coaching, grassroots coach development, and what the data actually shows — by Kevin Middleton.",
+    "Longform essays on AI in football coaching, grassroots coach development, and what the data actually shows, by Kevin Middleton.",
 };
 
 function formatDate(dateStr: string): string {
