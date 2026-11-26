@@ -44,7 +44,7 @@ export const COACHING_LADDER = [
     tier: "Free",
     name: "The Small-Sided Games Cheat Sheet",
     price: "Free",
-    blurb: "The drill structure every grassroots coach should know by heart. Start here.",
+    blurb: "The practice structure every grassroots coach should know by heart. Start here.",
     url: `https://premium.360tft.com/l/ssg-cheat-sheet?${UTM}&utm_medium=coaching-section&utm_campaign=ssg-cheat-sheet`,
   },
   {
