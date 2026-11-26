@@ -1,8 +1,8 @@
 export const SITE = {
   name: "Kevin Middleton",
-  title: "Kevin Middleton: UEFA Licensed, coached since 2010, apps used by over 25,000 coaches.",
+  title: "Kevin Middleton: UEFA Licensed, coached since 2010, and over 25,000 people have signed up to my apps.",
   description:
-    "UEFA Licensed, coached since 2010, coached over 1,000 players, worked at every level of the game, apps used by over 25,000 coaches. Get the free Small-Sided Games cheat sheet, or work with me 1-on-1.",
+    "UEFA Licensed, coached since 2010, coached over 1,000 players, worked at every level of the game, and over 25,000 people have signed up to my apps. Get the free Small-Sided Games cheat sheet, or work with me 1-on-1.",
   url: "https://kevinmiddleton.360tft.com",
 } as const;
 
@@ -48,18 +48,18 @@ export const COACHING_LADDER = [
     url: `https://premium.360tft.com/l/ssg-cheat-sheet?${UTM}&utm_medium=coaching-section&utm_campaign=ssg-cheat-sheet`,
   },
   {
-    tier: "$20",
-    name: "Tomorrow's Session Sorted",
-    price: "$20",
-    blurb: "282 ready-to-run sessions across technical, ball mastery, 1v1, match-based, tactical, and finishing. Planning your next session at 10pm becomes a 30-second job.",
-    url: `https://premium.360tft.com/l/tomorrows-session-sorted?${UTM}&utm_medium=coaching-section&utm_campaign=sessions`,
+    tier: "$10",
+    name: "200+ Football Training Sessions",
+    price: "$10",
+    blurb: "Over 200 ready-to-use sessions across match-based training, ball mastery, 1v1s, finishing, technical work, small-sided games and possession. Planning your next session at 10pm becomes a 30-second job.",
+    url: `https://360tft.com/l/TrainingSessionsForAllAges?${UTM}&utm_medium=coaching-section&utm_campaign=sessions`,
   },
   {
     tier: "$40",
-    name: "Your Team's Game Model",
+    name: "The 360TFT Coaching Framework",
     price: "$40",
-    blurb: "The full Master The Game / Ball / Opponent set, plus the Grassroots Pack. A model to guide your team through every age and stage.",
-    url: `https://premium.360tft.com/l/your-teams-game-model?${UTM}&utm_medium=coaching-section&utm_campaign=game-model`,
+    blurb: "Master The Ball, Master The Opponent and Master The Game as one coaching framework, plus the Grassroots Football Pack. A model to guide your team through every age and stage.",
+    url: `https://360tft.com/l/360TFTGM?${UTM}&utm_medium=coaching-section&utm_campaign=coaching-framework`,
   },
   {
     tier: "$100",
