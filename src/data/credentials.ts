@@ -9,7 +9,7 @@ export interface Credential {
 export const credentials: Credential[] = [
   {
     name: "UEFA Licensed coach",
-    metric: "UEFA Licensed, coached since 2010, coached over 1,000 players, worked at every level of the game, apps used by over 25,000 coaches.",
+    metric: "UEFA Licensed, coached since 2010, coached over 1,000 players, worked at every level of the game, and over 25,000 people have signed up to my apps.",
   },
   {
     name: "FootballGPT",
@@ -18,7 +18,7 @@ export const credentials: Credential[] = [
   },
   {
     name: "Football Coaching Academy",
-    metric: "1,800 member Skool community",
+    metric: "500+ member Skool community",
     url: "https://www.skool.com/coachingacademy",
   },
   {

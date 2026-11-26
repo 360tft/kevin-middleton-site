@@ -73,7 +73,7 @@ export default function Home() {
             For clubs, federations and football founders.
           </h2>
           <p className="text-[15px] text-[#c0c0c0] leading-relaxed max-w-[640px]">
-            I build AI apps used by over 25,000 coaches. If you want to build AI that coaches actually use, this is the work, and the stack, to study.
+            I build AI apps. Over 25,000 people have signed up to my apps. If you want to build AI that coaches actually use, this is the work, and the stack, to study.
           </p>
         </div>
         <CredentialsList />
@@ -89,7 +89,7 @@ export default function Home() {
             The resources I built since I started coaching in 2010.
           </h2>
           <p className="text-[15px] text-[#c0c0c0] leading-relaxed max-w-[640px]">
-            UEFA Licensed, coached since 2010, coached over 1,000 players, worked at every level of the game, apps used by over 25,000 coaches. The pack below is what I wish I&apos;d had when I first started.
+            UEFA Licensed, coached since 2010, coached over 1,000 players, worked at every level of the game, and over 25,000 people have signed up to my apps. The pack below is what I wish I&apos;d had when I first started.
           </p>
         </div>
         <CoachingLadder />
@@ -103,7 +103,7 @@ export default function Home() {
           </p>
         </div>
         <p className="text-[16px] md:text-[18px] text-[#c0c0c0] leading-relaxed max-w-[720px]">
-          UEFA Licensed, coached since 2010, coached over 1,000 players, worked at every level of the game, apps used by over 25,000 coaches. The resources here are ones I built along the way, that I wish I&apos;d had when I first started.
+          UEFA Licensed, coached since 2010, coached over 1,000 players, worked at every level of the game, and over 25,000 people have signed up to my apps. The resources here are ones I built along the way, that I wish I&apos;d had when I first started.
         </p>
         <p className="text-[14px] text-[#999] leading-relaxed max-w-[720px] mt-6">
           Library of individual coaching resources lives at{" "}

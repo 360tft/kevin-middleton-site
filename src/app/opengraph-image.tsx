@@ -72,7 +72,7 @@ export default async function OGImage() {
               lineHeight: 1.4,
             }}
           >
-            UEFA Licensed. Coached since 2010. Apps used by over 25,000 coaches.
+            UEFA Licensed. Coached since 2010. Over 25,000 people have signed up to my apps.
           </span>
         </div>
       </div>
