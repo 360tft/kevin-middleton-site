@@ -28,7 +28,7 @@ export const credentials: Credential[] = [
   },
   {
     name: "Gumroad store",
-    metric: "39 coaching resources, buyers in 47 countries",
+    metric: "Coaches in over 85 countries have downloaded my coaching resources",
     url: "https://kev1wired.gumroad.com",
   },
   {
